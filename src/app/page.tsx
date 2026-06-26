@@ -1,65 +1,156 @@
-import Image from "next/image";
+'use client'
 
-export default function Home() {
+import { useEffect, useState } from 'react'
+import Header from '@/components/Header'
+import AlertCard from '@/components/AlertCard'
+import StatsCard from '@/components/StatsCard'
+import { connectMQTT, disconnectMQTT, Alert } from '@/lib/mqtt'
+import { AlertTriangle, CheckCircle, Clock, Zap } from 'lucide-react'
+
+export default function Dashboard() {
+  const [alerts, setAlerts] = useState<Alert[]>([])
+  const [isConnected, setIsConnected] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+
+  useEffect(() => {
+    const initMQTT = async () => {
+      try {
+        setIsLoading(true)
+        setError(null)
+
+        await connectMQTT(
+          (newAlert: Alert) => {
+            setAlerts((prev) => {
+              // Check if alert already exists
+              const exists = prev.find((a) => a.alertId === newAlert.alertId)
+              if (exists) {
+                // Update existing alert (in case of status change)
+                return prev.map((a) =>
+                  a.alertId === newAlert.alertId ? newAlert : a
+                )
+              }
+              // Add new alert at the beginning
+              return [newAlert, ...prev].slice(0, 100) // Keep last 100
+            })
+          },
+          () => {
+            setIsConnected(true)
+            setIsLoading(false)
+          },
+          (error) => {
+            console.error('MQTT Error:', error)
+            setError('Failed to connect to alert network')
+            setIsLoading(false)
+          }
+        )
+      } catch (err) {
+        console.error('Connection failed:', err)
+        setError('Unable to establish connection')
+        setIsLoading(false)
+      }
+    }
+
+    initMQTT()
+
+    return () => {
+      disconnectMQTT()
+    }
+  }, [])
+
+  const activeAlerts = alerts.filter((a) => a.status === 'active')
+  const resolvedAlerts = alerts.filter((a) => a.status === 'resolved')
+  const highSeverity = alerts.filter((a) => a.severity > 66 && a.status === 'active')
+
+  const resourceCounts = alerts.reduce(
+    (acc, alert) => {
+      if (alert.status === 'active') {
+        acc[alert.resource] = (acc[alert.resource] || 0) + 1
+      }
+      return acc
+    },
+    {} as Record<string, number>
+  )
+
+  const topResource = Object.entries(resourceCounts).sort(([, a], [, b]) => b - a)[0]
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-900">
+      <Header isConnected={isConnected} />
+
+      <main className="max-w-7xl mx-auto px-6 py-8">
+        {/* Status Message */}
+        {isLoading && (
+          <div className="mb-6 card-base p-4 bg-blue-500/10 border-blue-500/30 flex items-center gap-3">
+            <div className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
+            <span className="text-sm text-blue-300">Connecting to alert network...</span>
+          </div>
+        )}
+
+        {error && (
+          <div className="mb-6 card-base p-4 bg-red-500/10 border-red-500/30 flex items-center gap-3">
+            <AlertTriangle size={18} className="text-red-400" />
+            <span className="text-sm text-red-300">{error}</span>
+          </div>
+        )}
+
+        {/* Stats Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+          <StatsCard
+            title="Active Alerts"
+            value={activeAlerts.length}
+            icon={<AlertTriangle size={24} />}
+            trend={activeAlerts.length > 3 ? 'up' : 'stable'}
+          />
+          <StatsCard
+            title="Resolved"
+            value={resolvedAlerts.length}
+            icon={<CheckCircle size={24} />}
+            trend="down"
+          />
+          <StatsCard
+            title="High Priority"
+            value={highSeverity.length}
+            icon={<Zap size={24} />}
+            trend={highSeverity.length > 0 ? 'up' : 'stable'}
+          />
+          <StatsCard
+            title="Total Alerts"
+            value={alerts.length}
+            icon={<Clock size={24} />}
+            subtitle={topResource ? `Top: ${topResource[0]}` : 'No data'}
+          />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* Alerts Section */}
+        <div>
+          <div className="mb-6">
+            <h2 className="text-2xl font-bold text-white mb-2">Active Alerts</h2>
+            <p className="text-slate-400 text-sm">Real-time resource requests from the mesh network</p>
+          </div>
+
+          {alerts.length === 0 ? (
+            <div className="card-base p-12 text-center">
+              <div className="w-16 h-16 rounded-full bg-slate-700/50 flex items-center justify-center mx-auto mb-4">
+                <CheckCircle size={32} className="text-slate-500" />
+              </div>
+              <h3 className="text-lg font-semibold text-slate-300 mb-2">No Active Alerts</h3>
+              <p className="text-slate-500 text-sm">All systems nominal. Waiting for incoming alerts...</p>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              {alerts.map((alert) => (
+                <AlertCard key={alert.alertId} alert={alert} />
+              ))}
+            </div>
+          )}
+        </div>
+
+        {/* Footer */}
+        <div className="mt-12 pt-8 border-t border-slate-700/50 text-center text-slate-400 text-xs">
+          <p>IoT Disaster Management System • Real-time Mesh Network Monitoring</p>
         </div>
       </main>
     </div>
-  );
+  )
 }
