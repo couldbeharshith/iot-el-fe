@@ -5,9 +5,9 @@ import Header from '@/components/Header'
 import AlertCard from '@/components/AlertCard'
 import StatsCard from '@/components/StatsCard'
 import { connectMQTT, disconnectMQTT, Alert } from '@/lib/mqtt'
+import { alertService } from '@/lib/alertService'
 import { AlertTriangle, CheckCircle, Clock, Zap, Trash2 } from 'lucide-react'
 
-const STORAGE_KEY = 'disaster_alerts'
 const MAX_ALERTS = 100
 
 export default function Dashboard() {
@@ -17,42 +17,44 @@ export default function Dashboard() {
   const [error, setError] = useState<string | null>(null)
   const [isMounted, setIsMounted] = useState(false)
 
-  // Load alerts from localStorage on mount
+  // Load alerts from server on mount
   useEffect(() => {
     setIsMounted(true)
-    const stored = localStorage.getItem(STORAGE_KEY)
-    if (stored) {
-      try {
-        const parsedAlerts = JSON.parse(stored) as Alert[]
-        setAlerts(parsedAlerts)
-      } catch (err) {
-        console.error('Failed to parse stored alerts:', err)
-      }
-    }
+    loadAlerts()
   }, [])
 
-  // Save alerts to localStorage whenever they change
-  useEffect(() => {
-    if (isMounted && alerts.length > 0) {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(alerts))
+  const loadAlerts = async () => {
+    try {
+      const serverAlerts = await alertService.getAlerts()
+      setAlerts(serverAlerts)
+    } catch (err) {
+      console.error('Failed to load alerts:', err)
     }
-  }, [alerts, isMounted])
-
-  const handleResolveAlert = (alertId: number) => {
-    setAlerts((prev) => {
-      return prev.map((alert) => {
-        if (alert.alertId === alertId) {
-          return { ...alert, status: 'resolved' as const }
-        }
-        return alert
-      })
-    })
   }
 
-  const handleReset = () => {
+  const handleResolveAlert = async (alertId: number) => {
+    try {
+      await alertService.resolveAlert(alertId)
+      setAlerts((prev) =>
+        prev.map((alert) =>
+          alert.alertId === alertId
+            ? { ...alert, status: 'resolved' as const }
+            : alert
+        )
+      )
+    } catch (err) {
+      console.error('Failed to resolve alert:', err)
+    }
+  }
+
+  const handleReset = async () => {
     if (confirm('Clear all alerts from dashboard? This cannot be undone.')) {
-      setAlerts([])
-      localStorage.removeItem(STORAGE_KEY)
+      try {
+        await alertService.clearAlerts()
+        setAlerts([])
+      } catch (err) {
+        console.error('Failed to clear alerts:', err)
+      }
     }
   }
 
@@ -65,17 +67,25 @@ export default function Dashboard() {
         setError(null)
 
         await connectMQTT(
-          (newAlert: Alert | null) => {
+          async (newAlert: Alert | null) => {
             if (newAlert) {
-              setAlerts((prev) => {
-                const exists = prev.find((a) => a.alertId === newAlert.alertId)
-                if (exists) {
-                  return prev.map((a) =>
-                    a.alertId === newAlert.alertId ? newAlert : a
+              try {
+                const exists = alerts.find((a) => a.alertId === newAlert.alertId)
+                if (!exists) {
+                  await alertService.saveAlert(newAlert)
+                  setAlerts((prev) =>
+                    [newAlert, ...prev].slice(0, MAX_ALERTS)
+                  )
+                } else {
+                  setAlerts((prev) =>
+                    prev.map((a) =>
+                      a.alertId === newAlert.alertId ? newAlert : a
+                    )
                   )
                 }
-                return [newAlert, ...prev].slice(0, MAX_ALERTS)
-              })
+              } catch (err) {
+                console.error('Error saving alert:', err)
+              }
             }
           },
           handleResolveAlert,
@@ -101,7 +111,7 @@ export default function Dashboard() {
     return () => {
       disconnectMQTT()
     }
-  }, [isMounted])
+  }, [isMounted, alerts])
 
   if (!isMounted) {
     return null

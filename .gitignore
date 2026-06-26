@@ -13,6 +13,10 @@
 # Production
 /build
 
+# Data files (persist on server, not in git)
+/data
+/data/
+
 # Misc
 .DS_Store
 *.pem
