@@ -13,6 +13,7 @@
 # Production
 /build
 
+data/alerts.json
 
 # Misc
 .DS_Store

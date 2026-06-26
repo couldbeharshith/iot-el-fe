@@ -19,7 +19,7 @@ export default function Header({ isConnected }: HeaderProps) {
             <span className="text-white font-bold text-lg">Q</span>
           </div>
           <div>
-            <h1 className="text-xl font-bold text-white">Disaster Alert Network</h1>
+            <h1 className="text-xl font-bold text-white">ResQnet Alert Dashboard</h1>
             <p className="text-xs text-slate-400">Real-time Resource Management Dashboard</p>
           </div>
         </div>
