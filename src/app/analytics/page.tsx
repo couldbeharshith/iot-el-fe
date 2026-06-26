@@ -471,11 +471,11 @@ export default function AnalyticsPage() {
 
           {/* Audit Log Sidebar - 1/3 width */}
           <div className="w-96 flex-shrink-0">
-            <div className="card-base p-6 h-full flex flex-col sticky top-24">
+            <div className="card-base p-6 flex flex-col sticky top-24" style={{ height: 'calc(100vh - 140px)' }}>
               <h3 className="text-lg font-semibold font-['Manrope'] mb-4 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
                 Audit Log
               </h3>
-              <div className="flex-1 overflow-y-auto space-y-2 pr-2" style={{ maxHeight: 'calc(100vh - 200px)' }}>
+              <div className="flex-1 overflow-y-auto space-y-2 pr-4 hide-scrollbar">
                 {filteredAlerts.length === 0 ? (
                   <div className="text-center text-slate-500 py-8">
                     <p className="text-sm">No alerts to display</p>

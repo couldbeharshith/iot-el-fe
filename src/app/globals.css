@@ -45,4 +45,14 @@ body {
   .severity-low {
     @apply text-green-400;
   }
+
+  /* Hide scrollbar while keeping scrollability */
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
