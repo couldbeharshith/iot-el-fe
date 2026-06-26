@@ -70,19 +70,17 @@ export default function Dashboard() {
           async (newAlert: Alert | null) => {
             if (newAlert) {
               try {
-                const exists = alerts.find((a) => a.alertId === newAlert.alertId)
-                if (!exists) {
-                  await alertService.saveAlert(newAlert)
-                  setAlerts((prev) =>
-                    [newAlert, ...prev].slice(0, MAX_ALERTS)
-                  )
-                } else {
-                  setAlerts((prev) =>
-                    prev.map((a) =>
+                await alertService.saveAlert(newAlert)
+                setAlerts((prev) => {
+                  const exists = prev.find((a) => a.alertId === newAlert.alertId)
+                  if (!exists) {
+                    return [newAlert, ...prev].slice(0, MAX_ALERTS)
+                  } else {
+                    return prev.map((a) =>
                       a.alertId === newAlert.alertId ? newAlert : a
                     )
-                  )
-                }
+                  }
+                })
               } catch (err) {
                 console.error('Error saving alert:', err)
               }
@@ -111,7 +109,7 @@ export default function Dashboard() {
     return () => {
       disconnectMQTT()
     }
-  }, [isMounted, alerts])
+  }, [isMounted])
 
   if (!isMounted) {
     return null
