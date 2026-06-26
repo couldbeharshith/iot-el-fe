@@ -7,13 +7,40 @@ import StatsCard from '@/components/StatsCard'
 import { connectMQTT, disconnectMQTT, Alert } from '@/lib/mqtt'
 import { AlertTriangle, CheckCircle, Clock, Zap } from 'lucide-react'
 
+const STORAGE_KEY = 'disaster_alerts'
+const MAX_ALERTS = 100
+
 export default function Dashboard() {
   const [alerts, setAlerts] = useState<Alert[]>([])
   const [isConnected, setIsConnected] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [isMounted, setIsMounted] = useState(false)
+
+  // Load alerts from localStorage on mount
+  useEffect(() => {
+    setIsMounted(true)
+    const stored = localStorage.getItem(STORAGE_KEY)
+    if (stored) {
+      try {
+        const parsedAlerts = JSON.parse(stored) as Alert[]
+        setAlerts(parsedAlerts)
+      } catch (err) {
+        console.error('Failed to parse stored alerts:', err)
+      }
+    }
+  }, [])
+
+  // Save alerts to localStorage whenever they change
+  useEffect(() => {
+    if (isMounted && alerts.length > 0) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(alerts))
+    }
+  }, [alerts, isMounted])
 
   useEffect(() => {
+    if (!isMounted) return
+
     const initMQTT = async () => {
       try {
         setIsLoading(true)
@@ -31,7 +58,7 @@ export default function Dashboard() {
                 )
               }
               // Add new alert at the beginning
-              return [newAlert, ...prev].slice(0, 100) // Keep last 100
+              return [newAlert, ...prev].slice(0, MAX_ALERTS) // Keep last 100
             })
           },
           () => {
@@ -56,7 +83,11 @@ export default function Dashboard() {
     return () => {
       disconnectMQTT()
     }
-  }, [])
+  }, [isMounted])
+
+  if (!isMounted) {
+    return null
+  }
 
   const activeAlerts = alerts.filter((a) => a.status === 'active')
   const resolvedAlerts = alerts.filter((a) => a.status === 'resolved')
