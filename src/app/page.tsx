@@ -5,7 +5,7 @@ import Header from '@/components/Header'
 import AlertCard from '@/components/AlertCard'
 import StatsCard from '@/components/StatsCard'
 import { connectMQTT, disconnectMQTT, Alert } from '@/lib/mqtt'
-import { AlertTriangle, CheckCircle, Clock, Zap } from 'lucide-react'
+import { AlertTriangle, CheckCircle, Clock, Zap, Trash2 } from 'lucide-react'
 
 const STORAGE_KEY = 'disaster_alerts'
 const MAX_ALERTS = 100
@@ -38,6 +38,24 @@ export default function Dashboard() {
     }
   }, [alerts, isMounted])
 
+  const handleResolveAlert = (alertId: number) => {
+    setAlerts((prev) => {
+      return prev.map((alert) => {
+        if (alert.alertId === alertId) {
+          return { ...alert, status: 'resolved' as const }
+        }
+        return alert
+      })
+    })
+  }
+
+  const handleReset = () => {
+    if (confirm('Clear all alerts from dashboard? This cannot be undone.')) {
+      setAlerts([])
+      localStorage.removeItem(STORAGE_KEY)
+    }
+  }
+
   useEffect(() => {
     if (!isMounted) return
 
@@ -47,20 +65,20 @@ export default function Dashboard() {
         setError(null)
 
         await connectMQTT(
-          (newAlert: Alert) => {
-            setAlerts((prev) => {
-              // Check if alert already exists
-              const exists = prev.find((a) => a.alertId === newAlert.alertId)
-              if (exists) {
-                // Update existing alert (in case of status change)
-                return prev.map((a) =>
-                  a.alertId === newAlert.alertId ? newAlert : a
-                )
-              }
-              // Add new alert at the beginning
-              return [newAlert, ...prev].slice(0, MAX_ALERTS) // Keep last 100
-            })
+          (newAlert: Alert | null) => {
+            if (newAlert) {
+              setAlerts((prev) => {
+                const exists = prev.find((a) => a.alertId === newAlert.alertId)
+                if (exists) {
+                  return prev.map((a) =>
+                    a.alertId === newAlert.alertId ? newAlert : a
+                  )
+                }
+                return [newAlert, ...prev].slice(0, MAX_ALERTS)
+              })
+            }
           },
+          handleResolveAlert,
           () => {
             setIsConnected(true)
             setIsLoading(false)
@@ -155,9 +173,18 @@ export default function Dashboard() {
 
         {/* Alerts Section */}
         <div>
-          <div className="mb-6">
-            <h2 className="text-2xl font-bold text-white mb-2">Active Alerts</h2>
-            <p className="text-slate-400 text-sm">Real-time resource requests from the mesh network</p>
+          <div className="mb-6 flex items-center justify-between">
+            <div>
+              <h2 className="text-2xl font-bold text-white mb-2">Active Alerts</h2>
+              <p className="text-slate-400 text-sm">Real-time resource requests from the mesh network</p>
+            </div>
+            <button
+              onClick={handleReset}
+              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-red-500/20 border border-red-500/30 text-red-300 hover:bg-red-500/30 transition-colors"
+            >
+              <Trash2 size={18} />
+              <span className="text-sm font-medium">Reset</span>
+            </button>
           </div>
 
           {alerts.length === 0 ? (
@@ -165,7 +192,7 @@ export default function Dashboard() {
               <div className="w-16 h-16 rounded-full bg-slate-700/50 flex items-center justify-center mx-auto mb-4">
                 <CheckCircle size={32} className="text-slate-500" />
               </div>
-              <h3 className="text-lg font-semibold text-slate-300 mb-2">No Active Alerts</h3>
+              <h3 className="text-lg font-semibold text-slate-300 mb-2">No Alerts</h3>
               <p className="text-slate-500 text-sm">All systems nominal. Waiting for incoming alerts...</p>
             </div>
           ) : (
