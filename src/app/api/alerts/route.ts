@@ -67,12 +67,16 @@ export async function POST(request: NextRequest) {
 // PUT update alert (for resolving)
 export async function PUT(request: NextRequest) {
   try {
-    const { alertId, status } = await request.json()
+    const { alertId, status, nodeId, timestamp } = await request.json()
     const alerts = await readAlerts()
     
     const alert = alerts.find((a: any) => a.alertId === alertId)
     if (alert) {
       alert.status = status
+      if (status === 'resolved') {
+        alert.resolvedAt = timestamp || Math.floor(Date.now() / 1000)
+        alert.resolvedBy = nodeId
+      }
       await writeAlerts(alerts)
       return NextResponse.json(alert)
     }

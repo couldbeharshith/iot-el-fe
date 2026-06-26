@@ -7,6 +7,8 @@ export interface Alert {
   severity: number
   timestamp: number
   status: 'active' | 'resolved'
+  resolvedAt?: number
+  resolvedBy?: number
 }
 
 const MQTT_BROKER = 'wss://0aa83f4bcfc64c5f80b6447461eae988.s1.eu.hivemq.cloud:8884/mqtt'
@@ -68,8 +70,8 @@ export const connectMQTT = (
           try {
             const data = JSON.parse(message.toString())
             
-            // Handle resolve messages: {"alertId": X, "status": "resolved"}
-            if (data.alertId && data.status === 'resolved' && !data.nodeId) {
+            // Handle resolve messages: {"alertId": X, "nodeId": Y, "timestamp": Z, "status": "resolved"}
+            if (data.alertId && data.status === 'resolved') {
               console.log('Received resolve message for alert:', data.alertId)
               onResolve(data.alertId)
               return

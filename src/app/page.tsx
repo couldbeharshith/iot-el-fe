@@ -16,6 +16,7 @@ export default function Dashboard() {
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [isMounted, setIsMounted] = useState(false)
+  const [filter, setFilter] = useState<'all' | 'active' | 'resolved'>('all')
 
   // Load alerts from server on mount
   useEffect(() => {
@@ -38,7 +39,7 @@ export default function Dashboard() {
       setAlerts((prev) =>
         prev.map((alert) =>
           alert.alertId === alertId
-            ? { ...alert, status: 'resolved' as const }
+            ? { ...alert, status: 'resolved' as const, resolvedAt: Math.floor(Date.now() / 1000) }
             : alert
         )
       )
@@ -119,6 +120,8 @@ export default function Dashboard() {
   const resolvedAlerts = alerts.filter((a) => a.status === 'resolved')
   const highSeverity = alerts.filter((a) => a.severity > 66 && a.status === 'active')
 
+  const filteredAlerts = filter === 'all' ? alerts : alerts.filter((a) => a.status === filter)
+
   const resourceCounts = alerts.reduce(
     (acc, alert) => {
       if (alert.status === 'active') {
@@ -132,7 +135,7 @@ export default function Dashboard() {
   const topResource = Object.entries(resourceCounts).sort(([, a], [, b]) => b - a)[0]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-900">
+    <div className="min-h-screen bg-black">
       <Header isConnected={isConnected} />
 
       <main className="max-w-7xl mx-auto px-6 py-8">
@@ -183,7 +186,7 @@ export default function Dashboard() {
         <div>
           <div className="mb-6 flex items-center justify-between">
             <div>
-              <h2 className="text-2xl font-bold text-white mb-2">Active Alerts</h2>
+              <h2 className="text-2xl font-bold text-white mb-2">Alerts</h2>
               <p className="text-slate-400 text-sm">Real-time resource requests from the mesh network</p>
             </div>
             <button
@@ -195,17 +198,58 @@ export default function Dashboard() {
             </button>
           </div>
 
-          {alerts.length === 0 ? (
+          {/* Filter Tabs */}
+          <div className="mb-6 flex gap-2">
+            <button
+              onClick={() => setFilter('all')}
+              className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                filter === 'all'
+                  ? 'bg-blue-500 text-white'
+                  : 'bg-slate-800 text-slate-400 hover:bg-slate-700'
+              }`}
+            >
+              All ({alerts.length})
+            </button>
+            <button
+              onClick={() => setFilter('active')}
+              className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                filter === 'active'
+                  ? 'bg-red-500 text-white'
+                  : 'bg-slate-800 text-slate-400 hover:bg-slate-700'
+              }`}
+            >
+              Active ({activeAlerts.length})
+            </button>
+            <button
+              onClick={() => setFilter('resolved')}
+              className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                filter === 'resolved'
+                  ? 'bg-green-500 text-white'
+                  : 'bg-slate-800 text-slate-400 hover:bg-slate-700'
+              }`}
+            >
+              Resolved ({resolvedAlerts.length})
+            </button>
+          </div>
+
+          {filteredAlerts.length === 0 ? (
             <div className="card-base p-12 text-center">
               <div className="w-16 h-16 rounded-full bg-slate-700/50 flex items-center justify-center mx-auto mb-4">
                 <CheckCircle size={32} className="text-slate-500" />
               </div>
-              <h3 className="text-lg font-semibold text-slate-300 mb-2">No Alerts</h3>
-              <p className="text-slate-500 text-sm">All systems nominal. Waiting for incoming alerts...</p>
+              <h3 className="text-lg font-semibold text-slate-300 mb-2">
+                {filter === 'all' ? 'No Alerts' : `No ${filter} Alerts`}
+              </h3>
+              <p className="text-slate-500 text-sm">
+                {filter === 'all' 
+                  ? 'All systems nominal. Waiting for incoming alerts...'
+                  : `No ${filter} alerts found.`
+                }
+              </p>
             </div>
           ) : (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-              {alerts.map((alert) => (
+              {filteredAlerts.map((alert) => (
                 <AlertCard key={alert.alertId} alert={alert} />
               ))}
             </div>
