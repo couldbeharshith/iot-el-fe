@@ -12,7 +12,7 @@ export default function Header({ isConnected }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
-            <span className="text-white font-bold text-lg">🚨</span>
+            <span className="text-white font-bold text-lg">Q</span>
           </div>
           <div>
             <h1 className="text-xl font-bold text-white">Disaster Alert Network</h1>

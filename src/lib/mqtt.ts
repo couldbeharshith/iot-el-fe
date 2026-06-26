@@ -9,9 +9,9 @@ export interface Alert {
   status: 'active' | 'resolved'
 }
 
-const MQTT_BROKER = 'wss://a2d174684b10434db4fed867424bf8e6.s1.eu.hivemq.cloud:8884/mqtt'
-const MQTT_USER = 'rvceIOT'
-const MQTT_PASSWORD = 'rvceIOT4'
+const MQTT_BROKER = 'wss://0aa83f4bcfc64c5f80b6447461eae988.s1.eu.hivemq.cloud:8884/mqtt'
+const MQTT_USER = 'mich123'
+const MQTT_PASSWORD = 'Michelle123'
 const MQTT_TOPIC = 'disaster/alerts'
 
 let client: MqttClient | null = null
