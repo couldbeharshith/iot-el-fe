@@ -14,7 +14,7 @@ const MQTT_USER = 'mich123'
 const MQTT_PASSWORD = 'Michelle123'
 const MQTT_TOPIC = 'disaster/alerts'
 
-let client: MqttClient | null = null
+let client: mqtt.MqttClient | null = null
 let isConnecting = false
 
 export const connectMQTT = (
@@ -65,8 +65,28 @@ export const connectMQTT = (
       client.on('message', (topic, message) => {
         if (topic === MQTT_TOPIC) {
           try {
-            const alert = JSON.parse(message.toString()) as Alert
-            onMessage(alert)
+            const data = JSON.parse(message.toString())
+            
+            // Handle resolve-only messages (alertId + status)
+            if (data.alertId && data.status && !data.nodeId) {
+              console.log('Received resolve message:', data)
+              // Don't process resolve-only messages here
+              // They'll be handled by existing alerts update
+              return
+            }
+            
+            // Handle full alert messages
+            if (data.alertId && data.nodeId) {
+              const alert: Alert = {
+                alertId: data.alertId,
+                nodeId: data.nodeId,
+                resource: data.resource || 'Unknown',
+                severity: data.severity || 0,
+                timestamp: data.timestamp || Math.floor(Date.now() / 1000),
+                status: (data.status === 'resolved' ? 'resolved' : 'active') as 'active' | 'resolved'
+              }
+              onMessage(alert)
+            }
           } catch (error) {
             console.error('Failed to parse message:', error)
           }
