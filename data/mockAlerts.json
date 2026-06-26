@@ -1,0 +1,4300 @@
+[
+  {
+    "alertId": 1001,
+    "nodeId": 190180031,
+    "resource": "Medical",
+    "severity": 25,
+    "timestamp": 1779908432,
+    "status": "resolved",
+    "resolvedAt": 1779908970,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1002,
+    "nodeId": 190180030,
+    "resource": "Shelter",
+    "severity": 67,
+    "timestamp": 1779908610,
+    "status": "resolved",
+    "resolvedAt": 1779913861,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1003,
+    "nodeId": 190180033,
+    "resource": "Water",
+    "severity": 45,
+    "timestamp": 1779912659,
+    "status": "active"
+  },
+  {
+    "alertId": 1004,
+    "nodeId": 190180029,
+    "resource": "Food",
+    "severity": 69,
+    "timestamp": 1779914821,
+    "status": "active"
+  },
+  {
+    "alertId": 1005,
+    "nodeId": 190180033,
+    "resource": "Rescue",
+    "severity": 93,
+    "timestamp": 1779917519,
+    "status": "resolved",
+    "resolvedAt": 1779920365,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1006,
+    "nodeId": 190180033,
+    "resource": "Rescue",
+    "severity": 28,
+    "timestamp": 1779923003,
+    "status": "resolved",
+    "resolvedAt": 1779927956,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1007,
+    "nodeId": 190180030,
+    "resource": "Water",
+    "severity": 85,
+    "timestamp": 1779927560,
+    "status": "resolved",
+    "resolvedAt": 1779933915,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1008,
+    "nodeId": 190180033,
+    "resource": "Shelter",
+    "severity": 27,
+    "timestamp": 1779929890,
+    "status": "resolved",
+    "resolvedAt": 1779934529,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1009,
+    "nodeId": 190180032,
+    "resource": "Shelter",
+    "severity": 74,
+    "timestamp": 1779934584,
+    "status": "resolved",
+    "resolvedAt": 1779940619,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1010,
+    "nodeId": 190180029,
+    "resource": "Shelter",
+    "severity": 58,
+    "timestamp": 1779938411,
+    "status": "resolved",
+    "resolvedAt": 1779944335,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1011,
+    "nodeId": 190180030,
+    "resource": "Water",
+    "severity": 88,
+    "timestamp": 1779943411,
+    "status": "active"
+  },
+  {
+    "alertId": 1012,
+    "nodeId": 190180033,
+    "resource": "Shelter",
+    "severity": 47,
+    "timestamp": 1779947195,
+    "status": "resolved",
+    "resolvedAt": 1779949516,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1013,
+    "nodeId": 190180032,
+    "resource": "Clothing",
+    "severity": 98,
+    "timestamp": 1779948293,
+    "status": "resolved",
+    "resolvedAt": 1779953079,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1014,
+    "nodeId": 190180033,
+    "resource": "Shelter",
+    "severity": 25,
+    "timestamp": 1779950760,
+    "status": "resolved",
+    "resolvedAt": 1779951591,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1015,
+    "nodeId": 190180030,
+    "resource": "Shelter",
+    "severity": 33,
+    "timestamp": 1779951567,
+    "status": "active"
+  },
+  {
+    "alertId": 1016,
+    "nodeId": 190180031,
+    "resource": "Shelter",
+    "severity": 91,
+    "timestamp": 1779953823,
+    "status": "resolved",
+    "resolvedAt": 1779956184,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1017,
+    "nodeId": 190180029,
+    "resource": "Clothing",
+    "severity": 58,
+    "timestamp": 1779958219,
+    "status": "active"
+  },
+  {
+    "alertId": 1018,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 28,
+    "timestamp": 1779958879,
+    "status": "active"
+  },
+  {
+    "alertId": 1019,
+    "nodeId": 190180029,
+    "resource": "Rescue",
+    "severity": 90,
+    "timestamp": 1779962123,
+    "status": "resolved",
+    "resolvedAt": 1779966439,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1020,
+    "nodeId": 190180029,
+    "resource": "Water",
+    "severity": 79,
+    "timestamp": 1779963170,
+    "status": "resolved",
+    "resolvedAt": 1779964945,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1021,
+    "nodeId": 190180029,
+    "resource": "Transport",
+    "severity": 38,
+    "timestamp": 1779964125,
+    "status": "resolved",
+    "resolvedAt": 1779967295,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1022,
+    "nodeId": 190180031,
+    "resource": "Medical",
+    "severity": 46,
+    "timestamp": 1779966181,
+    "status": "resolved",
+    "resolvedAt": 1779973355,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1023,
+    "nodeId": 190180030,
+    "resource": "Medical",
+    "severity": 28,
+    "timestamp": 1779968303,
+    "status": "resolved",
+    "resolvedAt": 1779972905,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1024,
+    "nodeId": 190180030,
+    "resource": "Medical",
+    "severity": 31,
+    "timestamp": 1779970612,
+    "status": "active"
+  },
+  {
+    "alertId": 1025,
+    "nodeId": 190180031,
+    "resource": "Shelter",
+    "severity": 58,
+    "timestamp": 1779971222,
+    "status": "active"
+  },
+  {
+    "alertId": 1026,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 61,
+    "timestamp": 1779972993,
+    "status": "resolved",
+    "resolvedAt": 1779979551,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1027,
+    "nodeId": 190180029,
+    "resource": "Food",
+    "severity": 74,
+    "timestamp": 1779975998,
+    "status": "active"
+  },
+  {
+    "alertId": 1028,
+    "nodeId": 190180029,
+    "resource": "Water",
+    "severity": 49,
+    "timestamp": 1779978584,
+    "status": "resolved",
+    "resolvedAt": 1779984346,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1029,
+    "nodeId": 190180030,
+    "resource": "Clothing",
+    "severity": 68,
+    "timestamp": 1779979085,
+    "status": "resolved",
+    "resolvedAt": 1779983171,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1030,
+    "nodeId": 190180029,
+    "resource": "Shelter",
+    "severity": 64,
+    "timestamp": 1779979420,
+    "status": "resolved",
+    "resolvedAt": 1779982838,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1031,
+    "nodeId": 190180029,
+    "resource": "Clothing",
+    "severity": 26,
+    "timestamp": 1779982927,
+    "status": "resolved",
+    "resolvedAt": 1779989987,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1032,
+    "nodeId": 190180033,
+    "resource": "Clothing",
+    "severity": 46,
+    "timestamp": 1779984838,
+    "status": "active"
+  },
+  {
+    "alertId": 1033,
+    "nodeId": 190180029,
+    "resource": "Clothing",
+    "severity": 44,
+    "timestamp": 1779986460,
+    "status": "resolved",
+    "resolvedAt": 1779990840,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1034,
+    "nodeId": 190180031,
+    "resource": "Transport",
+    "severity": 80,
+    "timestamp": 1779989740,
+    "status": "resolved",
+    "resolvedAt": 1779996517,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1035,
+    "nodeId": 190180030,
+    "resource": "Clothing",
+    "severity": 69,
+    "timestamp": 1779990461,
+    "status": "resolved",
+    "resolvedAt": 1779995296,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1036,
+    "nodeId": 190180029,
+    "resource": "Water",
+    "severity": 42,
+    "timestamp": 1779994265,
+    "status": "active"
+  },
+  {
+    "alertId": 1037,
+    "nodeId": 190180031,
+    "resource": "Medical",
+    "severity": 34,
+    "timestamp": 1779994428,
+    "status": "resolved",
+    "resolvedAt": 1779996836,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1038,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 78,
+    "timestamp": 1779999105,
+    "status": "active"
+  },
+  {
+    "alertId": 1039,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 40,
+    "timestamp": 1780003315,
+    "status": "resolved",
+    "resolvedAt": 1780007200,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1040,
+    "nodeId": 190180033,
+    "resource": "Rescue",
+    "severity": 95,
+    "timestamp": 1780007119,
+    "status": "resolved",
+    "resolvedAt": 1780014043,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1041,
+    "nodeId": 190180031,
+    "resource": "Shelter",
+    "severity": 74,
+    "timestamp": 1780009489,
+    "status": "resolved",
+    "resolvedAt": 1780013309,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1042,
+    "nodeId": 190180029,
+    "resource": "Clothing",
+    "severity": 27,
+    "timestamp": 1780012285,
+    "status": "resolved",
+    "resolvedAt": 1780015882,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1043,
+    "nodeId": 190180032,
+    "resource": "Medical",
+    "severity": 46,
+    "timestamp": 1780017087,
+    "status": "resolved",
+    "resolvedAt": 1780024243,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1044,
+    "nodeId": 190180032,
+    "resource": "Food",
+    "severity": 42,
+    "timestamp": 1780020965,
+    "status": "resolved",
+    "resolvedAt": 1780022470,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1045,
+    "nodeId": 190180029,
+    "resource": "Clothing",
+    "severity": 29,
+    "timestamp": 1780023967,
+    "status": "active"
+  },
+  {
+    "alertId": 1046,
+    "nodeId": 190180033,
+    "resource": "Medical",
+    "severity": 54,
+    "timestamp": 1780027762,
+    "status": "resolved",
+    "resolvedAt": 1780028709,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1047,
+    "nodeId": 190180029,
+    "resource": "Shelter",
+    "severity": 31,
+    "timestamp": 1780028020,
+    "status": "resolved",
+    "resolvedAt": 1780034576,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1048,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 52,
+    "timestamp": 1780028817,
+    "status": "resolved",
+    "resolvedAt": 1780033849,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1049,
+    "nodeId": 190180032,
+    "resource": "Water",
+    "severity": 43,
+    "timestamp": 1780032627,
+    "status": "resolved",
+    "resolvedAt": 1780034373,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1050,
+    "nodeId": 190180032,
+    "resource": "Food",
+    "severity": 88,
+    "timestamp": 1780034326,
+    "status": "resolved",
+    "resolvedAt": 1780040554,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1051,
+    "nodeId": 190180029,
+    "resource": "Water",
+    "severity": 38,
+    "timestamp": 1780036731,
+    "status": "resolved",
+    "resolvedAt": 1780039717,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1052,
+    "nodeId": 190180031,
+    "resource": "Food",
+    "severity": 27,
+    "timestamp": 1780041715,
+    "status": "resolved",
+    "resolvedAt": 1780047853,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1053,
+    "nodeId": 190180030,
+    "resource": "Shelter",
+    "severity": 34,
+    "timestamp": 1780042262,
+    "status": "active"
+  },
+  {
+    "alertId": 1054,
+    "nodeId": 190180033,
+    "resource": "Shelter",
+    "severity": 86,
+    "timestamp": 1780047424,
+    "status": "active"
+  },
+  {
+    "alertId": 1055,
+    "nodeId": 190180033,
+    "resource": "Water",
+    "severity": 67,
+    "timestamp": 1780049103,
+    "status": "resolved",
+    "resolvedAt": 1780055655,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1056,
+    "nodeId": 190180030,
+    "resource": "Rescue",
+    "severity": 98,
+    "timestamp": 1780051672,
+    "status": "resolved",
+    "resolvedAt": 1780056854,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1057,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 57,
+    "timestamp": 1780056588,
+    "status": "resolved",
+    "resolvedAt": 1780062212,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1058,
+    "nodeId": 190180031,
+    "resource": "Medical",
+    "severity": 28,
+    "timestamp": 1780060945,
+    "status": "active"
+  },
+  {
+    "alertId": 1059,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 82,
+    "timestamp": 1780063188,
+    "status": "resolved",
+    "resolvedAt": 1780067997,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1060,
+    "nodeId": 190180032,
+    "resource": "Clothing",
+    "severity": 76,
+    "timestamp": 1780068709,
+    "status": "resolved",
+    "resolvedAt": 1780071272,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1061,
+    "nodeId": 190180032,
+    "resource": "Medical",
+    "severity": 82,
+    "timestamp": 1780070525,
+    "status": "resolved",
+    "resolvedAt": 1780074748,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1062,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 95,
+    "timestamp": 1780071956,
+    "status": "resolved",
+    "resolvedAt": 1780078880,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1063,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 75,
+    "timestamp": 1780076179,
+    "status": "resolved",
+    "resolvedAt": 1780077642,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1064,
+    "nodeId": 190180032,
+    "resource": "Rescue",
+    "severity": 82,
+    "timestamp": 1780076434,
+    "status": "resolved",
+    "resolvedAt": 1780080804,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1065,
+    "nodeId": 190180032,
+    "resource": "Transport",
+    "severity": 40,
+    "timestamp": 1780079894,
+    "status": "resolved",
+    "resolvedAt": 1780080474,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1066,
+    "nodeId": 190180029,
+    "resource": "Medical",
+    "severity": 89,
+    "timestamp": 1780080877,
+    "status": "active"
+  },
+  {
+    "alertId": 1067,
+    "nodeId": 190180033,
+    "resource": "Clothing",
+    "severity": 91,
+    "timestamp": 1780081621,
+    "status": "resolved",
+    "resolvedAt": 1780082346,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1068,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 62,
+    "timestamp": 1780081922,
+    "status": "active"
+  },
+  {
+    "alertId": 1069,
+    "nodeId": 190180029,
+    "resource": "Medical",
+    "severity": 93,
+    "timestamp": 1780086970,
+    "status": "resolved",
+    "resolvedAt": 1780092039,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1070,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 88,
+    "timestamp": 1780087649,
+    "status": "resolved",
+    "resolvedAt": 1780093385,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1071,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 67,
+    "timestamp": 1780087807,
+    "status": "resolved",
+    "resolvedAt": 1780089845,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1072,
+    "nodeId": 190180030,
+    "resource": "Shelter",
+    "severity": 39,
+    "timestamp": 1780088080,
+    "status": "active"
+  },
+  {
+    "alertId": 1073,
+    "nodeId": 190180031,
+    "resource": "Food",
+    "severity": 62,
+    "timestamp": 1780088827,
+    "status": "resolved",
+    "resolvedAt": 1780095770,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1074,
+    "nodeId": 190180031,
+    "resource": "Transport",
+    "severity": 81,
+    "timestamp": 1780090265,
+    "status": "resolved",
+    "resolvedAt": 1780096727,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1075,
+    "nodeId": 190180029,
+    "resource": "Transport",
+    "severity": 97,
+    "timestamp": 1780095613,
+    "status": "resolved",
+    "resolvedAt": 1780096389,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1076,
+    "nodeId": 190180030,
+    "resource": "Rescue",
+    "severity": 94,
+    "timestamp": 1780100502,
+    "status": "resolved",
+    "resolvedAt": 1780104723,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1077,
+    "nodeId": 190180032,
+    "resource": "Water",
+    "severity": 86,
+    "timestamp": 1780103358,
+    "status": "resolved",
+    "resolvedAt": 1780106814,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1078,
+    "nodeId": 190180030,
+    "resource": "Water",
+    "severity": 34,
+    "timestamp": 1780108674,
+    "status": "active"
+  },
+  {
+    "alertId": 1079,
+    "nodeId": 190180031,
+    "resource": "Water",
+    "severity": 94,
+    "timestamp": 1780113456,
+    "status": "resolved",
+    "resolvedAt": 1780114157,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1080,
+    "nodeId": 190180031,
+    "resource": "Medical",
+    "severity": 78,
+    "timestamp": 1780115487,
+    "status": "active"
+  },
+  {
+    "alertId": 1081,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 86,
+    "timestamp": 1780118729,
+    "status": "active"
+  },
+  {
+    "alertId": 1082,
+    "nodeId": 190180030,
+    "resource": "Clothing",
+    "severity": 33,
+    "timestamp": 1780121153,
+    "status": "active"
+  },
+  {
+    "alertId": 1083,
+    "nodeId": 190180030,
+    "resource": "Transport",
+    "severity": 97,
+    "timestamp": 1780123805,
+    "status": "resolved",
+    "resolvedAt": 1780124707,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1084,
+    "nodeId": 190180029,
+    "resource": "Rescue",
+    "severity": 54,
+    "timestamp": 1780127741,
+    "status": "active"
+  },
+  {
+    "alertId": 1085,
+    "nodeId": 190180029,
+    "resource": "Transport",
+    "severity": 54,
+    "timestamp": 1780128205,
+    "status": "active"
+  },
+  {
+    "alertId": 1086,
+    "nodeId": 190180031,
+    "resource": "Water",
+    "severity": 37,
+    "timestamp": 1780128720,
+    "status": "resolved",
+    "resolvedAt": 1780133704,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1087,
+    "nodeId": 190180033,
+    "resource": "Food",
+    "severity": 31,
+    "timestamp": 1780129945,
+    "status": "active"
+  },
+  {
+    "alertId": 1088,
+    "nodeId": 190180031,
+    "resource": "Shelter",
+    "severity": 28,
+    "timestamp": 1780135012,
+    "status": "active"
+  },
+  {
+    "alertId": 1089,
+    "nodeId": 190180029,
+    "resource": "Shelter",
+    "severity": 48,
+    "timestamp": 1780135363,
+    "status": "resolved",
+    "resolvedAt": 1780138943,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1090,
+    "nodeId": 190180030,
+    "resource": "Transport",
+    "severity": 66,
+    "timestamp": 1780139258,
+    "status": "resolved",
+    "resolvedAt": 1780142095,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1091,
+    "nodeId": 190180030,
+    "resource": "Transport",
+    "severity": 79,
+    "timestamp": 1780140806,
+    "status": "active"
+  },
+  {
+    "alertId": 1092,
+    "nodeId": 190180029,
+    "resource": "Medical",
+    "severity": 84,
+    "timestamp": 1780140922,
+    "status": "resolved",
+    "resolvedAt": 1780142656,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1093,
+    "nodeId": 190180032,
+    "resource": "Rescue",
+    "severity": 33,
+    "timestamp": 1780141280,
+    "status": "resolved",
+    "resolvedAt": 1780146303,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1094,
+    "nodeId": 190180030,
+    "resource": "Water",
+    "severity": 31,
+    "timestamp": 1780145708,
+    "status": "active"
+  },
+  {
+    "alertId": 1095,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 37,
+    "timestamp": 1780151319,
+    "status": "resolved",
+    "resolvedAt": 1780157884,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1096,
+    "nodeId": 190180029,
+    "resource": "Medical",
+    "severity": 47,
+    "timestamp": 1780156665,
+    "status": "active"
+  },
+  {
+    "alertId": 1097,
+    "nodeId": 190180032,
+    "resource": "Food",
+    "severity": 60,
+    "timestamp": 1780158105,
+    "status": "resolved",
+    "resolvedAt": 1780161691,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1098,
+    "nodeId": 190180032,
+    "resource": "Transport",
+    "severity": 61,
+    "timestamp": 1780161265,
+    "status": "resolved",
+    "resolvedAt": 1780167220,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1099,
+    "nodeId": 190180031,
+    "resource": "Rescue",
+    "severity": 86,
+    "timestamp": 1780161983,
+    "status": "resolved",
+    "resolvedAt": 1780165536,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1100,
+    "nodeId": 190180031,
+    "resource": "Food",
+    "severity": 83,
+    "timestamp": 1780163727,
+    "status": "resolved",
+    "resolvedAt": 1780167614,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1101,
+    "nodeId": 190180031,
+    "resource": "Medical",
+    "severity": 87,
+    "timestamp": 1780166293,
+    "status": "resolved",
+    "resolvedAt": 1780171037,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1102,
+    "nodeId": 190180032,
+    "resource": "Water",
+    "severity": 40,
+    "timestamp": 1780166994,
+    "status": "resolved",
+    "resolvedAt": 1780171127,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1103,
+    "nodeId": 190180029,
+    "resource": "Water",
+    "severity": 82,
+    "timestamp": 1780167640,
+    "status": "active"
+  },
+  {
+    "alertId": 1104,
+    "nodeId": 190180029,
+    "resource": "Food",
+    "severity": 29,
+    "timestamp": 1780167868,
+    "status": "active"
+  },
+  {
+    "alertId": 1105,
+    "nodeId": 190180029,
+    "resource": "Water",
+    "severity": 93,
+    "timestamp": 1780171767,
+    "status": "active"
+  },
+  {
+    "alertId": 1106,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 37,
+    "timestamp": 1780177058,
+    "status": "resolved",
+    "resolvedAt": 1780182936,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1107,
+    "nodeId": 190180030,
+    "resource": "Clothing",
+    "severity": 39,
+    "timestamp": 1780178428,
+    "status": "resolved",
+    "resolvedAt": 1780181036,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1108,
+    "nodeId": 190180030,
+    "resource": "Transport",
+    "severity": 37,
+    "timestamp": 1780180276,
+    "status": "active"
+  },
+  {
+    "alertId": 1109,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 39,
+    "timestamp": 1780184205,
+    "status": "active"
+  },
+  {
+    "alertId": 1110,
+    "nodeId": 190180032,
+    "resource": "Shelter",
+    "severity": 61,
+    "timestamp": 1780187906,
+    "status": "resolved",
+    "resolvedAt": 1780190968,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1111,
+    "nodeId": 190180033,
+    "resource": "Food",
+    "severity": 95,
+    "timestamp": 1780188234,
+    "status": "resolved",
+    "resolvedAt": 1780191055,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1112,
+    "nodeId": 190180031,
+    "resource": "Medical",
+    "severity": 41,
+    "timestamp": 1780189664,
+    "status": "resolved",
+    "resolvedAt": 1780195825,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1113,
+    "nodeId": 190180030,
+    "resource": "Medical",
+    "severity": 47,
+    "timestamp": 1780194276,
+    "status": "resolved",
+    "resolvedAt": 1780199667,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1114,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 98,
+    "timestamp": 1780197477,
+    "status": "active"
+  },
+  {
+    "alertId": 1115,
+    "nodeId": 190180033,
+    "resource": "Food",
+    "severity": 38,
+    "timestamp": 1780202283,
+    "status": "active"
+  },
+  {
+    "alertId": 1116,
+    "nodeId": 190180033,
+    "resource": "Medical",
+    "severity": 81,
+    "timestamp": 1780207037,
+    "status": "resolved",
+    "resolvedAt": 1780212746,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1117,
+    "nodeId": 190180032,
+    "resource": "Water",
+    "severity": 31,
+    "timestamp": 1780207339,
+    "status": "resolved",
+    "resolvedAt": 1780212016,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1118,
+    "nodeId": 190180029,
+    "resource": "Shelter",
+    "severity": 94,
+    "timestamp": 1780210940,
+    "status": "resolved",
+    "resolvedAt": 1780212927,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1119,
+    "nodeId": 190180031,
+    "resource": "Food",
+    "severity": 95,
+    "timestamp": 1780216461,
+    "status": "resolved",
+    "resolvedAt": 1780221491,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1120,
+    "nodeId": 190180033,
+    "resource": "Food",
+    "severity": 98,
+    "timestamp": 1780219783,
+    "status": "active"
+  },
+  {
+    "alertId": 1121,
+    "nodeId": 190180029,
+    "resource": "Food",
+    "severity": 98,
+    "timestamp": 1780224685,
+    "status": "resolved",
+    "resolvedAt": 1780225903,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1122,
+    "nodeId": 190180032,
+    "resource": "Food",
+    "severity": 35,
+    "timestamp": 1780227896,
+    "status": "resolved",
+    "resolvedAt": 1780232664,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1123,
+    "nodeId": 190180033,
+    "resource": "Food",
+    "severity": 38,
+    "timestamp": 1780228489,
+    "status": "resolved",
+    "resolvedAt": 1780234317,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1124,
+    "nodeId": 190180030,
+    "resource": "Clothing",
+    "severity": 56,
+    "timestamp": 1780233448,
+    "status": "active"
+  },
+  {
+    "alertId": 1125,
+    "nodeId": 190180029,
+    "resource": "Food",
+    "severity": 25,
+    "timestamp": 1780233683,
+    "status": "resolved",
+    "resolvedAt": 1780234994,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1126,
+    "nodeId": 190180033,
+    "resource": "Shelter",
+    "severity": 58,
+    "timestamp": 1780237258,
+    "status": "resolved",
+    "resolvedAt": 1780244096,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1127,
+    "nodeId": 190180030,
+    "resource": "Transport",
+    "severity": 46,
+    "timestamp": 1780239534,
+    "status": "active"
+  },
+  {
+    "alertId": 1128,
+    "nodeId": 190180031,
+    "resource": "Transport",
+    "severity": 52,
+    "timestamp": 1780242238,
+    "status": "resolved",
+    "resolvedAt": 1780245921,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1129,
+    "nodeId": 190180029,
+    "resource": "Clothing",
+    "severity": 42,
+    "timestamp": 1780242964,
+    "status": "resolved",
+    "resolvedAt": 1780248492,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1130,
+    "nodeId": 190180032,
+    "resource": "Shelter",
+    "severity": 82,
+    "timestamp": 1780245197,
+    "status": "active"
+  },
+  {
+    "alertId": 1131,
+    "nodeId": 190180031,
+    "resource": "Medical",
+    "severity": 48,
+    "timestamp": 1780245620,
+    "status": "active"
+  },
+  {
+    "alertId": 1132,
+    "nodeId": 190180032,
+    "resource": "Shelter",
+    "severity": 76,
+    "timestamp": 1780247855,
+    "status": "resolved",
+    "resolvedAt": 1780250386,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1133,
+    "nodeId": 190180029,
+    "resource": "Medical",
+    "severity": 95,
+    "timestamp": 1780249437,
+    "status": "resolved",
+    "resolvedAt": 1780254853,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1134,
+    "nodeId": 190180033,
+    "resource": "Medical",
+    "severity": 93,
+    "timestamp": 1780250153,
+    "status": "active"
+  },
+  {
+    "alertId": 1135,
+    "nodeId": 190180033,
+    "resource": "Transport",
+    "severity": 27,
+    "timestamp": 1780252971,
+    "status": "resolved",
+    "resolvedAt": 1780253400,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1136,
+    "nodeId": 190180032,
+    "resource": "Shelter",
+    "severity": 70,
+    "timestamp": 1780256872,
+    "status": "resolved",
+    "resolvedAt": 1780258516,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1137,
+    "nodeId": 190180032,
+    "resource": "Rescue",
+    "severity": 40,
+    "timestamp": 1780259549,
+    "status": "active"
+  },
+  {
+    "alertId": 1138,
+    "nodeId": 190180030,
+    "resource": "Transport",
+    "severity": 44,
+    "timestamp": 1780262584,
+    "status": "resolved",
+    "resolvedAt": 1780266403,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1139,
+    "nodeId": 190180032,
+    "resource": "Rescue",
+    "severity": 55,
+    "timestamp": 1780265994,
+    "status": "resolved",
+    "resolvedAt": 1780266372,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1140,
+    "nodeId": 190180033,
+    "resource": "Clothing",
+    "severity": 60,
+    "timestamp": 1780271493,
+    "status": "active"
+  },
+  {
+    "alertId": 1141,
+    "nodeId": 190180032,
+    "resource": "Rescue",
+    "severity": 40,
+    "timestamp": 1780276305,
+    "status": "active"
+  },
+  {
+    "alertId": 1142,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 84,
+    "timestamp": 1780281333,
+    "status": "resolved",
+    "resolvedAt": 1780284751,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1143,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 37,
+    "timestamp": 1780283553,
+    "status": "resolved",
+    "resolvedAt": 1780288851,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1144,
+    "nodeId": 190180029,
+    "resource": "Shelter",
+    "severity": 44,
+    "timestamp": 1780289149,
+    "status": "resolved",
+    "resolvedAt": 1780293054,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1145,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 84,
+    "timestamp": 1780294170,
+    "status": "active"
+  },
+  {
+    "alertId": 1146,
+    "nodeId": 190180029,
+    "resource": "Rescue",
+    "severity": 34,
+    "timestamp": 1780295180,
+    "status": "active"
+  },
+  {
+    "alertId": 1147,
+    "nodeId": 190180031,
+    "resource": "Rescue",
+    "severity": 54,
+    "timestamp": 1780299404,
+    "status": "resolved",
+    "resolvedAt": 1780300217,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1148,
+    "nodeId": 190180030,
+    "resource": "Shelter",
+    "severity": 55,
+    "timestamp": 1780300516,
+    "status": "resolved",
+    "resolvedAt": 1780306042,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1149,
+    "nodeId": 190180029,
+    "resource": "Clothing",
+    "severity": 65,
+    "timestamp": 1780302183,
+    "status": "resolved",
+    "resolvedAt": 1780308336,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1150,
+    "nodeId": 190180030,
+    "resource": "Clothing",
+    "severity": 97,
+    "timestamp": 1780302964,
+    "status": "resolved",
+    "resolvedAt": 1780304323,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1151,
+    "nodeId": 190180030,
+    "resource": "Clothing",
+    "severity": 80,
+    "timestamp": 1780308585,
+    "status": "active"
+  },
+  {
+    "alertId": 1152,
+    "nodeId": 190180033,
+    "resource": "Rescue",
+    "severity": 45,
+    "timestamp": 1780309590,
+    "status": "resolved",
+    "resolvedAt": 1780314498,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1153,
+    "nodeId": 190180029,
+    "resource": "Rescue",
+    "severity": 90,
+    "timestamp": 1780312203,
+    "status": "resolved",
+    "resolvedAt": 1780314118,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1154,
+    "nodeId": 190180033,
+    "resource": "Clothing",
+    "severity": 82,
+    "timestamp": 1780315687,
+    "status": "resolved",
+    "resolvedAt": 1780319662,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1155,
+    "nodeId": 190180029,
+    "resource": "Food",
+    "severity": 46,
+    "timestamp": 1780316381,
+    "status": "resolved",
+    "resolvedAt": 1780321881,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1156,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 90,
+    "timestamp": 1780320696,
+    "status": "active"
+  },
+  {
+    "alertId": 1157,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 76,
+    "timestamp": 1780323207,
+    "status": "active"
+  },
+  {
+    "alertId": 1158,
+    "nodeId": 190180030,
+    "resource": "Clothing",
+    "severity": 28,
+    "timestamp": 1780325897,
+    "status": "active"
+  },
+  {
+    "alertId": 1159,
+    "nodeId": 190180033,
+    "resource": "Transport",
+    "severity": 75,
+    "timestamp": 1780327331,
+    "status": "resolved",
+    "resolvedAt": 1780333334,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1160,
+    "nodeId": 190180033,
+    "resource": "Food",
+    "severity": 86,
+    "timestamp": 1780328275,
+    "status": "resolved",
+    "resolvedAt": 1780332062,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1161,
+    "nodeId": 190180030,
+    "resource": "Transport",
+    "severity": 81,
+    "timestamp": 1780331893,
+    "status": "active"
+  },
+  {
+    "alertId": 1162,
+    "nodeId": 190180029,
+    "resource": "Water",
+    "severity": 88,
+    "timestamp": 1780331939,
+    "status": "resolved",
+    "resolvedAt": 1780333560,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1163,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 64,
+    "timestamp": 1780334832,
+    "status": "resolved",
+    "resolvedAt": 1780340134,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1164,
+    "nodeId": 190180032,
+    "resource": "Rescue",
+    "severity": 28,
+    "timestamp": 1780339795,
+    "status": "resolved",
+    "resolvedAt": 1780345694,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1165,
+    "nodeId": 190180030,
+    "resource": "Water",
+    "severity": 58,
+    "timestamp": 1780344118,
+    "status": "resolved",
+    "resolvedAt": 1780350013,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1166,
+    "nodeId": 190180029,
+    "resource": "Water",
+    "severity": 51,
+    "timestamp": 1780344911,
+    "status": "active"
+  },
+  {
+    "alertId": 1167,
+    "nodeId": 190180029,
+    "resource": "Water",
+    "severity": 58,
+    "timestamp": 1780349825,
+    "status": "resolved",
+    "resolvedAt": 1780353949,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1168,
+    "nodeId": 190180030,
+    "resource": "Medical",
+    "severity": 36,
+    "timestamp": 1780352245,
+    "status": "active"
+  },
+  {
+    "alertId": 1169,
+    "nodeId": 190180032,
+    "resource": "Water",
+    "severity": 70,
+    "timestamp": 1780352570,
+    "status": "resolved",
+    "resolvedAt": 1780357870,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1170,
+    "nodeId": 190180033,
+    "resource": "Rescue",
+    "severity": 52,
+    "timestamp": 1780355000,
+    "status": "resolved",
+    "resolvedAt": 1780358955,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1171,
+    "nodeId": 190180029,
+    "resource": "Food",
+    "severity": 41,
+    "timestamp": 1780357514,
+    "status": "resolved",
+    "resolvedAt": 1780360313,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1172,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 31,
+    "timestamp": 1780361020,
+    "status": "active"
+  },
+  {
+    "alertId": 1173,
+    "nodeId": 190180033,
+    "resource": "Clothing",
+    "severity": 84,
+    "timestamp": 1780362226,
+    "status": "active"
+  },
+  {
+    "alertId": 1174,
+    "nodeId": 190180032,
+    "resource": "Transport",
+    "severity": 52,
+    "timestamp": 1780362894,
+    "status": "active"
+  },
+  {
+    "alertId": 1175,
+    "nodeId": 190180033,
+    "resource": "Rescue",
+    "severity": 91,
+    "timestamp": 1780364566,
+    "status": "active"
+  },
+  {
+    "alertId": 1176,
+    "nodeId": 190180033,
+    "resource": "Medical",
+    "severity": 95,
+    "timestamp": 1780365828,
+    "status": "resolved",
+    "resolvedAt": 1780367023,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1177,
+    "nodeId": 190180032,
+    "resource": "Food",
+    "severity": 31,
+    "timestamp": 1780366203,
+    "status": "resolved",
+    "resolvedAt": 1780372249,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1178,
+    "nodeId": 190180031,
+    "resource": "Rescue",
+    "severity": 38,
+    "timestamp": 1780367912,
+    "status": "resolved",
+    "resolvedAt": 1780370610,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1179,
+    "nodeId": 190180029,
+    "resource": "Medical",
+    "severity": 65,
+    "timestamp": 1780370482,
+    "status": "resolved",
+    "resolvedAt": 1780376318,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1180,
+    "nodeId": 190180030,
+    "resource": "Rescue",
+    "severity": 62,
+    "timestamp": 1780373501,
+    "status": "resolved",
+    "resolvedAt": 1780378451,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1181,
+    "nodeId": 190180032,
+    "resource": "Food",
+    "severity": 52,
+    "timestamp": 1780375324,
+    "status": "resolved",
+    "resolvedAt": 1780382323,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1182,
+    "nodeId": 190180030,
+    "resource": "Shelter",
+    "severity": 74,
+    "timestamp": 1780377635,
+    "status": "resolved",
+    "resolvedAt": 1780382879,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1183,
+    "nodeId": 190180032,
+    "resource": "Transport",
+    "severity": 33,
+    "timestamp": 1780381814,
+    "status": "resolved",
+    "resolvedAt": 1780387906,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1184,
+    "nodeId": 190180031,
+    "resource": "Food",
+    "severity": 73,
+    "timestamp": 1780385882,
+    "status": "resolved",
+    "resolvedAt": 1780391944,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1185,
+    "nodeId": 190180032,
+    "resource": "Food",
+    "severity": 57,
+    "timestamp": 1780388077,
+    "status": "active"
+  },
+  {
+    "alertId": 1186,
+    "nodeId": 190180032,
+    "resource": "Rescue",
+    "severity": 91,
+    "timestamp": 1780390156,
+    "status": "resolved",
+    "resolvedAt": 1780391247,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1187,
+    "nodeId": 190180030,
+    "resource": "Water",
+    "severity": 75,
+    "timestamp": 1780392223,
+    "status": "resolved",
+    "resolvedAt": 1780396006,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1188,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 34,
+    "timestamp": 1780397792,
+    "status": "resolved",
+    "resolvedAt": 1780402339,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1189,
+    "nodeId": 190180033,
+    "resource": "Transport",
+    "severity": 50,
+    "timestamp": 1780399144,
+    "status": "resolved",
+    "resolvedAt": 1780404580,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1190,
+    "nodeId": 190180029,
+    "resource": "Food",
+    "severity": 68,
+    "timestamp": 1780400924,
+    "status": "active"
+  },
+  {
+    "alertId": 1191,
+    "nodeId": 190180033,
+    "resource": "Food",
+    "severity": 59,
+    "timestamp": 1780402130,
+    "status": "resolved",
+    "resolvedAt": 1780402659,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1192,
+    "nodeId": 190180029,
+    "resource": "Clothing",
+    "severity": 61,
+    "timestamp": 1780402758,
+    "status": "resolved",
+    "resolvedAt": 1780409286,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1193,
+    "nodeId": 190180033,
+    "resource": "Food",
+    "severity": 82,
+    "timestamp": 1780407806,
+    "status": "active"
+  },
+  {
+    "alertId": 1194,
+    "nodeId": 190180033,
+    "resource": "Food",
+    "severity": 37,
+    "timestamp": 1780412249,
+    "status": "active"
+  },
+  {
+    "alertId": 1195,
+    "nodeId": 190180033,
+    "resource": "Rescue",
+    "severity": 64,
+    "timestamp": 1780417070,
+    "status": "resolved",
+    "resolvedAt": 1780423958,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1196,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 98,
+    "timestamp": 1780421652,
+    "status": "resolved",
+    "resolvedAt": 1780424385,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1197,
+    "nodeId": 190180032,
+    "resource": "Rescue",
+    "severity": 42,
+    "timestamp": 1780427030,
+    "status": "resolved",
+    "resolvedAt": 1780433466,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1198,
+    "nodeId": 190180033,
+    "resource": "Water",
+    "severity": 76,
+    "timestamp": 1780427404,
+    "status": "resolved",
+    "resolvedAt": 1780434522,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1199,
+    "nodeId": 190180031,
+    "resource": "Medical",
+    "severity": 82,
+    "timestamp": 1780432546,
+    "status": "resolved",
+    "resolvedAt": 1780437853,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1200,
+    "nodeId": 190180030,
+    "resource": "Clothing",
+    "severity": 46,
+    "timestamp": 1780432723,
+    "status": "resolved",
+    "resolvedAt": 1780436886,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1201,
+    "nodeId": 190180032,
+    "resource": "Food",
+    "severity": 57,
+    "timestamp": 1780436544,
+    "status": "resolved",
+    "resolvedAt": 1780440191,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1202,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 25,
+    "timestamp": 1780439938,
+    "status": "active"
+  },
+  {
+    "alertId": 1203,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 98,
+    "timestamp": 1780440008,
+    "status": "resolved",
+    "resolvedAt": 1780444545,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1204,
+    "nodeId": 190180029,
+    "resource": "Clothing",
+    "severity": 92,
+    "timestamp": 1780445311,
+    "status": "resolved",
+    "resolvedAt": 1780447404,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1205,
+    "nodeId": 190180029,
+    "resource": "Shelter",
+    "severity": 57,
+    "timestamp": 1780449346,
+    "status": "resolved",
+    "resolvedAt": 1780449823,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1206,
+    "nodeId": 190180030,
+    "resource": "Water",
+    "severity": 75,
+    "timestamp": 1780449640,
+    "status": "resolved",
+    "resolvedAt": 1780453005,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1207,
+    "nodeId": 190180031,
+    "resource": "Food",
+    "severity": 62,
+    "timestamp": 1780452225,
+    "status": "resolved",
+    "resolvedAt": 1780454343,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1208,
+    "nodeId": 190180033,
+    "resource": "Transport",
+    "severity": 49,
+    "timestamp": 1780455609,
+    "status": "active"
+  },
+  {
+    "alertId": 1209,
+    "nodeId": 190180033,
+    "resource": "Transport",
+    "severity": 73,
+    "timestamp": 1780458852,
+    "status": "resolved",
+    "resolvedAt": 1780462824,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1210,
+    "nodeId": 190180032,
+    "resource": "Shelter",
+    "severity": 84,
+    "timestamp": 1780460018,
+    "status": "resolved",
+    "resolvedAt": 1780461362,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1211,
+    "nodeId": 190180033,
+    "resource": "Food",
+    "severity": 95,
+    "timestamp": 1780463968,
+    "status": "resolved",
+    "resolvedAt": 1780467396,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1212,
+    "nodeId": 190180029,
+    "resource": "Shelter",
+    "severity": 81,
+    "timestamp": 1780469169,
+    "status": "resolved",
+    "resolvedAt": 1780470094,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1213,
+    "nodeId": 190180031,
+    "resource": "Medical",
+    "severity": 98,
+    "timestamp": 1780469731,
+    "status": "resolved",
+    "resolvedAt": 1780475817,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1214,
+    "nodeId": 190180032,
+    "resource": "Clothing",
+    "severity": 88,
+    "timestamp": 1780470520,
+    "status": "active"
+  },
+  {
+    "alertId": 1215,
+    "nodeId": 190180031,
+    "resource": "Water",
+    "severity": 37,
+    "timestamp": 1780473046,
+    "status": "resolved",
+    "resolvedAt": 1780477867,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1216,
+    "nodeId": 190180032,
+    "resource": "Water",
+    "severity": 48,
+    "timestamp": 1780476762,
+    "status": "active"
+  },
+  {
+    "alertId": 1217,
+    "nodeId": 190180033,
+    "resource": "Shelter",
+    "severity": 83,
+    "timestamp": 1780478247,
+    "status": "resolved",
+    "resolvedAt": 1780480980,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1218,
+    "nodeId": 190180033,
+    "resource": "Medical",
+    "severity": 42,
+    "timestamp": 1780481691,
+    "status": "active"
+  },
+  {
+    "alertId": 1219,
+    "nodeId": 190180029,
+    "resource": "Shelter",
+    "severity": 88,
+    "timestamp": 1780482088,
+    "status": "active"
+  },
+  {
+    "alertId": 1220,
+    "nodeId": 190180032,
+    "resource": "Rescue",
+    "severity": 58,
+    "timestamp": 1780486840,
+    "status": "resolved",
+    "resolvedAt": 1780491472,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1221,
+    "nodeId": 190180029,
+    "resource": "Food",
+    "severity": 76,
+    "timestamp": 1780491751,
+    "status": "resolved",
+    "resolvedAt": 1780495330,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1222,
+    "nodeId": 190180030,
+    "resource": "Shelter",
+    "severity": 58,
+    "timestamp": 1780494197,
+    "status": "resolved",
+    "resolvedAt": 1780500899,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1223,
+    "nodeId": 190180029,
+    "resource": "Medical",
+    "severity": 52,
+    "timestamp": 1780498758,
+    "status": "active"
+  },
+  {
+    "alertId": 1224,
+    "nodeId": 190180032,
+    "resource": "Water",
+    "severity": 65,
+    "timestamp": 1780503256,
+    "status": "resolved",
+    "resolvedAt": 1780510390,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1225,
+    "nodeId": 190180033,
+    "resource": "Rescue",
+    "severity": 27,
+    "timestamp": 1780503287,
+    "status": "active"
+  },
+  {
+    "alertId": 1226,
+    "nodeId": 190180031,
+    "resource": "Shelter",
+    "severity": 42,
+    "timestamp": 1780505758,
+    "status": "active"
+  },
+  {
+    "alertId": 1227,
+    "nodeId": 190180032,
+    "resource": "Medical",
+    "severity": 84,
+    "timestamp": 1780507118,
+    "status": "resolved",
+    "resolvedAt": 1780510767,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1228,
+    "nodeId": 190180029,
+    "resource": "Shelter",
+    "severity": 57,
+    "timestamp": 1780509361,
+    "status": "resolved",
+    "resolvedAt": 1780511920,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1229,
+    "nodeId": 190180033,
+    "resource": "Food",
+    "severity": 25,
+    "timestamp": 1780513131,
+    "status": "resolved",
+    "resolvedAt": 1780515670,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1230,
+    "nodeId": 190180031,
+    "resource": "Food",
+    "severity": 57,
+    "timestamp": 1780514660,
+    "status": "resolved",
+    "resolvedAt": 1780516312,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1231,
+    "nodeId": 190180030,
+    "resource": "Transport",
+    "severity": 50,
+    "timestamp": 1780517923,
+    "status": "resolved",
+    "resolvedAt": 1780522642,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1232,
+    "nodeId": 190180030,
+    "resource": "Clothing",
+    "severity": 69,
+    "timestamp": 1780523111,
+    "status": "active"
+  },
+  {
+    "alertId": 1233,
+    "nodeId": 190180032,
+    "resource": "Shelter",
+    "severity": 73,
+    "timestamp": 1780524172,
+    "status": "resolved",
+    "resolvedAt": 1780529836,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1234,
+    "nodeId": 190180029,
+    "resource": "Water",
+    "severity": 65,
+    "timestamp": 1780528035,
+    "status": "resolved",
+    "resolvedAt": 1780529573,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1235,
+    "nodeId": 190180029,
+    "resource": "Medical",
+    "severity": 98,
+    "timestamp": 1780531964,
+    "status": "active"
+  },
+  {
+    "alertId": 1236,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 72,
+    "timestamp": 1780535405,
+    "status": "resolved",
+    "resolvedAt": 1780536845,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1237,
+    "nodeId": 190180031,
+    "resource": "Rescue",
+    "severity": 34,
+    "timestamp": 1780536488,
+    "status": "resolved",
+    "resolvedAt": 1780538929,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1238,
+    "nodeId": 190180031,
+    "resource": "Water",
+    "severity": 83,
+    "timestamp": 1780538150,
+    "status": "resolved",
+    "resolvedAt": 1780544898,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1239,
+    "nodeId": 190180032,
+    "resource": "Food",
+    "severity": 69,
+    "timestamp": 1780540713,
+    "status": "resolved",
+    "resolvedAt": 1780542154,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1240,
+    "nodeId": 190180029,
+    "resource": "Transport",
+    "severity": 25,
+    "timestamp": 1780541013,
+    "status": "resolved",
+    "resolvedAt": 1780541366,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1241,
+    "nodeId": 190180031,
+    "resource": "Water",
+    "severity": 27,
+    "timestamp": 1780542410,
+    "status": "resolved",
+    "resolvedAt": 1780543249,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1242,
+    "nodeId": 190180033,
+    "resource": "Clothing",
+    "severity": 42,
+    "timestamp": 1780546365,
+    "status": "active"
+  },
+  {
+    "alertId": 1243,
+    "nodeId": 190180031,
+    "resource": "Water",
+    "severity": 60,
+    "timestamp": 1780549570,
+    "status": "resolved",
+    "resolvedAt": 1780550557,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1244,
+    "nodeId": 190180033,
+    "resource": "Shelter",
+    "severity": 56,
+    "timestamp": 1780551541,
+    "status": "resolved",
+    "resolvedAt": 1780556581,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1245,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 91,
+    "timestamp": 1780552526,
+    "status": "active"
+  },
+  {
+    "alertId": 1246,
+    "nodeId": 190180031,
+    "resource": "Transport",
+    "severity": 41,
+    "timestamp": 1780554935,
+    "status": "active"
+  },
+  {
+    "alertId": 1247,
+    "nodeId": 190180032,
+    "resource": "Water",
+    "severity": 41,
+    "timestamp": 1780559450,
+    "status": "active"
+  },
+  {
+    "alertId": 1248,
+    "nodeId": 190180029,
+    "resource": "Food",
+    "severity": 40,
+    "timestamp": 1780562716,
+    "status": "active"
+  },
+  {
+    "alertId": 1249,
+    "nodeId": 190180029,
+    "resource": "Water",
+    "severity": 88,
+    "timestamp": 1780567548,
+    "status": "active"
+  },
+  {
+    "alertId": 1250,
+    "nodeId": 190180033,
+    "resource": "Medical",
+    "severity": 27,
+    "timestamp": 1780569535,
+    "status": "active"
+  },
+  {
+    "alertId": 1251,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 33,
+    "timestamp": 1780574388,
+    "status": "resolved",
+    "resolvedAt": 1780578608,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1252,
+    "nodeId": 190180029,
+    "resource": "Shelter",
+    "severity": 31,
+    "timestamp": 1780577339,
+    "status": "resolved",
+    "resolvedAt": 1780580746,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1253,
+    "nodeId": 190180033,
+    "resource": "Shelter",
+    "severity": 72,
+    "timestamp": 1780581113,
+    "status": "resolved",
+    "resolvedAt": 1780584302,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1254,
+    "nodeId": 190180033,
+    "resource": "Water",
+    "severity": 50,
+    "timestamp": 1780583973,
+    "status": "active"
+  },
+  {
+    "alertId": 1255,
+    "nodeId": 190180030,
+    "resource": "Clothing",
+    "severity": 42,
+    "timestamp": 1780585800,
+    "status": "active"
+  },
+  {
+    "alertId": 1256,
+    "nodeId": 190180030,
+    "resource": "Transport",
+    "severity": 56,
+    "timestamp": 1780587040,
+    "status": "resolved",
+    "resolvedAt": 1780593508,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1257,
+    "nodeId": 190180032,
+    "resource": "Food",
+    "severity": 85,
+    "timestamp": 1780591849,
+    "status": "active"
+  },
+  {
+    "alertId": 1258,
+    "nodeId": 190180030,
+    "resource": "Shelter",
+    "severity": 30,
+    "timestamp": 1780593097,
+    "status": "active"
+  },
+  {
+    "alertId": 1259,
+    "nodeId": 190180030,
+    "resource": "Medical",
+    "severity": 30,
+    "timestamp": 1780595073,
+    "status": "resolved",
+    "resolvedAt": 1780602027,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1260,
+    "nodeId": 190180032,
+    "resource": "Rescue",
+    "severity": 96,
+    "timestamp": 1780598019,
+    "status": "resolved",
+    "resolvedAt": 1780600215,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1261,
+    "nodeId": 190180032,
+    "resource": "Medical",
+    "severity": 51,
+    "timestamp": 1780602000,
+    "status": "resolved",
+    "resolvedAt": 1780607947,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1262,
+    "nodeId": 190180031,
+    "resource": "Water",
+    "severity": 93,
+    "timestamp": 1780605180,
+    "status": "resolved",
+    "resolvedAt": 1780611920,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1263,
+    "nodeId": 190180031,
+    "resource": "Water",
+    "severity": 65,
+    "timestamp": 1780610730,
+    "status": "active"
+  },
+  {
+    "alertId": 1264,
+    "nodeId": 190180030,
+    "resource": "Rescue",
+    "severity": 98,
+    "timestamp": 1780614617,
+    "status": "resolved",
+    "resolvedAt": 1780618329,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1265,
+    "nodeId": 190180031,
+    "resource": "Shelter",
+    "severity": 35,
+    "timestamp": 1780615382,
+    "status": "resolved",
+    "resolvedAt": 1780619407,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1266,
+    "nodeId": 190180029,
+    "resource": "Rescue",
+    "severity": 85,
+    "timestamp": 1780617606,
+    "status": "resolved",
+    "resolvedAt": 1780618757,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1267,
+    "nodeId": 190180030,
+    "resource": "Clothing",
+    "severity": 58,
+    "timestamp": 1780621785,
+    "status": "resolved",
+    "resolvedAt": 1780625624,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1268,
+    "nodeId": 190180030,
+    "resource": "Rescue",
+    "severity": 25,
+    "timestamp": 1780626790,
+    "status": "resolved",
+    "resolvedAt": 1780629409,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1269,
+    "nodeId": 190180029,
+    "resource": "Clothing",
+    "severity": 89,
+    "timestamp": 1780627569,
+    "status": "resolved",
+    "resolvedAt": 1780634371,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1270,
+    "nodeId": 190180032,
+    "resource": "Shelter",
+    "severity": 53,
+    "timestamp": 1780629690,
+    "status": "resolved",
+    "resolvedAt": 1780632933,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1271,
+    "nodeId": 190180030,
+    "resource": "Water",
+    "severity": 29,
+    "timestamp": 1780633003,
+    "status": "resolved",
+    "resolvedAt": 1780636230,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1272,
+    "nodeId": 190180029,
+    "resource": "Transport",
+    "severity": 54,
+    "timestamp": 1780634504,
+    "status": "active"
+  },
+  {
+    "alertId": 1273,
+    "nodeId": 190180030,
+    "resource": "Clothing",
+    "severity": 50,
+    "timestamp": 1780637849,
+    "status": "resolved",
+    "resolvedAt": 1780642306,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1274,
+    "nodeId": 190180030,
+    "resource": "Water",
+    "severity": 65,
+    "timestamp": 1780642181,
+    "status": "resolved",
+    "resolvedAt": 1780649014,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1275,
+    "nodeId": 190180033,
+    "resource": "Food",
+    "severity": 64,
+    "timestamp": 1780645354,
+    "status": "resolved",
+    "resolvedAt": 1780650692,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1276,
+    "nodeId": 190180029,
+    "resource": "Medical",
+    "severity": 63,
+    "timestamp": 1780648885,
+    "status": "resolved",
+    "resolvedAt": 1780653364,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1277,
+    "nodeId": 190180032,
+    "resource": "Transport",
+    "severity": 93,
+    "timestamp": 1780652870,
+    "status": "active"
+  },
+  {
+    "alertId": 1278,
+    "nodeId": 190180033,
+    "resource": "Clothing",
+    "severity": 46,
+    "timestamp": 1780654253,
+    "status": "resolved",
+    "resolvedAt": 1780654925,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1279,
+    "nodeId": 190180030,
+    "resource": "Transport",
+    "severity": 67,
+    "timestamp": 1780656162,
+    "status": "active"
+  },
+  {
+    "alertId": 1280,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 81,
+    "timestamp": 1780661539,
+    "status": "resolved",
+    "resolvedAt": 1780663830,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1281,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 85,
+    "timestamp": 1780667012,
+    "status": "resolved",
+    "resolvedAt": 1780667742,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1282,
+    "nodeId": 190180031,
+    "resource": "Medical",
+    "severity": 87,
+    "timestamp": 1780668660,
+    "status": "active"
+  },
+  {
+    "alertId": 1283,
+    "nodeId": 190180033,
+    "resource": "Water",
+    "severity": 34,
+    "timestamp": 1780670216,
+    "status": "resolved",
+    "resolvedAt": 1780672705,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1284,
+    "nodeId": 190180031,
+    "resource": "Water",
+    "severity": 74,
+    "timestamp": 1780671962,
+    "status": "resolved",
+    "resolvedAt": 1780672706,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1285,
+    "nodeId": 190180032,
+    "resource": "Transport",
+    "severity": 42,
+    "timestamp": 1780673683,
+    "status": "active"
+  },
+  {
+    "alertId": 1286,
+    "nodeId": 190180033,
+    "resource": "Water",
+    "severity": 69,
+    "timestamp": 1780677334,
+    "status": "resolved",
+    "resolvedAt": 1780681974,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1287,
+    "nodeId": 190180030,
+    "resource": "Clothing",
+    "severity": 27,
+    "timestamp": 1780682053,
+    "status": "active"
+  },
+  {
+    "alertId": 1288,
+    "nodeId": 190180030,
+    "resource": "Shelter",
+    "severity": 53,
+    "timestamp": 1780682602,
+    "status": "active"
+  },
+  {
+    "alertId": 1289,
+    "nodeId": 190180030,
+    "resource": "Transport",
+    "severity": 49,
+    "timestamp": 1780683865,
+    "status": "active"
+  },
+  {
+    "alertId": 1290,
+    "nodeId": 190180032,
+    "resource": "Medical",
+    "severity": 87,
+    "timestamp": 1780687149,
+    "status": "resolved",
+    "resolvedAt": 1780694271,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1291,
+    "nodeId": 190180032,
+    "resource": "Clothing",
+    "severity": 52,
+    "timestamp": 1780688703,
+    "status": "resolved",
+    "resolvedAt": 1780689462,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1292,
+    "nodeId": 190180032,
+    "resource": "Transport",
+    "severity": 96,
+    "timestamp": 1780693918,
+    "status": "resolved",
+    "resolvedAt": 1780695783,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1293,
+    "nodeId": 190180029,
+    "resource": "Transport",
+    "severity": 68,
+    "timestamp": 1780696482,
+    "status": "resolved",
+    "resolvedAt": 1780699121,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1294,
+    "nodeId": 190180029,
+    "resource": "Transport",
+    "severity": 98,
+    "timestamp": 1780696823,
+    "status": "active"
+  },
+  {
+    "alertId": 1295,
+    "nodeId": 190180030,
+    "resource": "Transport",
+    "severity": 96,
+    "timestamp": 1780697751,
+    "status": "resolved",
+    "resolvedAt": 1780698336,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1296,
+    "nodeId": 190180031,
+    "resource": "Rescue",
+    "severity": 49,
+    "timestamp": 1780699852,
+    "status": "resolved",
+    "resolvedAt": 1780700989,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1297,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 41,
+    "timestamp": 1780701620,
+    "status": "resolved",
+    "resolvedAt": 1780704080,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1298,
+    "nodeId": 190180032,
+    "resource": "Rescue",
+    "severity": 42,
+    "timestamp": 1780701647,
+    "status": "active"
+  },
+  {
+    "alertId": 1299,
+    "nodeId": 190180033,
+    "resource": "Rescue",
+    "severity": 58,
+    "timestamp": 1780705695,
+    "status": "resolved",
+    "resolvedAt": 1780711988,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1300,
+    "nodeId": 190180033,
+    "resource": "Clothing",
+    "severity": 34,
+    "timestamp": 1780710018,
+    "status": "active"
+  },
+  {
+    "alertId": 1301,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 31,
+    "timestamp": 1780712651,
+    "status": "active"
+  },
+  {
+    "alertId": 1302,
+    "nodeId": 190180031,
+    "resource": "Rescue",
+    "severity": 39,
+    "timestamp": 1780715646,
+    "status": "resolved",
+    "resolvedAt": 1780718002,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1303,
+    "nodeId": 190180029,
+    "resource": "Clothing",
+    "severity": 84,
+    "timestamp": 1780719154,
+    "status": "resolved",
+    "resolvedAt": 1780720259,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1304,
+    "nodeId": 190180029,
+    "resource": "Rescue",
+    "severity": 89,
+    "timestamp": 1780719269,
+    "status": "resolved",
+    "resolvedAt": 1780723918,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1305,
+    "nodeId": 190180033,
+    "resource": "Medical",
+    "severity": 75,
+    "timestamp": 1780724085,
+    "status": "active"
+  },
+  {
+    "alertId": 1306,
+    "nodeId": 190180030,
+    "resource": "Shelter",
+    "severity": 78,
+    "timestamp": 1780729139,
+    "status": "active"
+  },
+  {
+    "alertId": 1307,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 81,
+    "timestamp": 1780730883,
+    "status": "resolved",
+    "resolvedAt": 1780732634,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1308,
+    "nodeId": 190180033,
+    "resource": "Clothing",
+    "severity": 58,
+    "timestamp": 1780734266,
+    "status": "active"
+  },
+  {
+    "alertId": 1309,
+    "nodeId": 190180033,
+    "resource": "Rescue",
+    "severity": 62,
+    "timestamp": 1780735391,
+    "status": "active"
+  },
+  {
+    "alertId": 1310,
+    "nodeId": 190180031,
+    "resource": "Shelter",
+    "severity": 91,
+    "timestamp": 1780736529,
+    "status": "resolved",
+    "resolvedAt": 1780739657,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1311,
+    "nodeId": 190180031,
+    "resource": "Rescue",
+    "severity": 51,
+    "timestamp": 1780740150,
+    "status": "active"
+  },
+  {
+    "alertId": 1312,
+    "nodeId": 190180033,
+    "resource": "Clothing",
+    "severity": 97,
+    "timestamp": 1780743729,
+    "status": "resolved",
+    "resolvedAt": 1780749362,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1313,
+    "nodeId": 190180032,
+    "resource": "Clothing",
+    "severity": 49,
+    "timestamp": 1780745567,
+    "status": "resolved",
+    "resolvedAt": 1780751431,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1314,
+    "nodeId": 190180029,
+    "resource": "Rescue",
+    "severity": 51,
+    "timestamp": 1780745609,
+    "status": "resolved",
+    "resolvedAt": 1780749516,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1315,
+    "nodeId": 190180029,
+    "resource": "Shelter",
+    "severity": 52,
+    "timestamp": 1780746989,
+    "status": "resolved",
+    "resolvedAt": 1780749977,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1316,
+    "nodeId": 190180030,
+    "resource": "Water",
+    "severity": 59,
+    "timestamp": 1780749627,
+    "status": "active"
+  },
+  {
+    "alertId": 1317,
+    "nodeId": 190180030,
+    "resource": "Transport",
+    "severity": 28,
+    "timestamp": 1780754081,
+    "status": "resolved",
+    "resolvedAt": 1780756018,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1318,
+    "nodeId": 190180033,
+    "resource": "Shelter",
+    "severity": 62,
+    "timestamp": 1780756049,
+    "status": "resolved",
+    "resolvedAt": 1780762420,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1319,
+    "nodeId": 190180029,
+    "resource": "Rescue",
+    "severity": 92,
+    "timestamp": 1780761233,
+    "status": "resolved",
+    "resolvedAt": 1780767411,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1320,
+    "nodeId": 190180032,
+    "resource": "Medical",
+    "severity": 60,
+    "timestamp": 1780763300,
+    "status": "resolved",
+    "resolvedAt": 1780769172,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1321,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 55,
+    "timestamp": 1780765111,
+    "status": "active"
+  },
+  {
+    "alertId": 1322,
+    "nodeId": 190180030,
+    "resource": "Shelter",
+    "severity": 37,
+    "timestamp": 1780770318,
+    "status": "resolved",
+    "resolvedAt": 1780775028,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1323,
+    "nodeId": 190180033,
+    "resource": "Clothing",
+    "severity": 70,
+    "timestamp": 1780771432,
+    "status": "resolved",
+    "resolvedAt": 1780776893,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1324,
+    "nodeId": 190180029,
+    "resource": "Clothing",
+    "severity": 94,
+    "timestamp": 1780772995,
+    "status": "resolved",
+    "resolvedAt": 1780777221,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1325,
+    "nodeId": 190180029,
+    "resource": "Transport",
+    "severity": 85,
+    "timestamp": 1780773213,
+    "status": "resolved",
+    "resolvedAt": 1780778573,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1326,
+    "nodeId": 190180032,
+    "resource": "Shelter",
+    "severity": 91,
+    "timestamp": 1780776239,
+    "status": "resolved",
+    "resolvedAt": 1780782872,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1327,
+    "nodeId": 190180031,
+    "resource": "Shelter",
+    "severity": 72,
+    "timestamp": 1780779629,
+    "status": "resolved",
+    "resolvedAt": 1780780494,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1328,
+    "nodeId": 190180029,
+    "resource": "Water",
+    "severity": 74,
+    "timestamp": 1780785016,
+    "status": "resolved",
+    "resolvedAt": 1780786073,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1329,
+    "nodeId": 190180030,
+    "resource": "Medical",
+    "severity": 44,
+    "timestamp": 1780789460,
+    "status": "resolved",
+    "resolvedAt": 1780791849,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1330,
+    "nodeId": 190180033,
+    "resource": "Clothing",
+    "severity": 52,
+    "timestamp": 1780794861,
+    "status": "resolved",
+    "resolvedAt": 1780796348,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1331,
+    "nodeId": 190180029,
+    "resource": "Food",
+    "severity": 27,
+    "timestamp": 1780795471,
+    "status": "resolved",
+    "resolvedAt": 1780796264,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1332,
+    "nodeId": 190180033,
+    "resource": "Rescue",
+    "severity": 37,
+    "timestamp": 1780800467,
+    "status": "resolved",
+    "resolvedAt": 1780806510,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1333,
+    "nodeId": 190180032,
+    "resource": "Clothing",
+    "severity": 46,
+    "timestamp": 1780805682,
+    "status": "resolved",
+    "resolvedAt": 1780810253,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1334,
+    "nodeId": 190180033,
+    "resource": "Transport",
+    "severity": 27,
+    "timestamp": 1780808379,
+    "status": "resolved",
+    "resolvedAt": 1780813091,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1335,
+    "nodeId": 190180031,
+    "resource": "Rescue",
+    "severity": 67,
+    "timestamp": 1780809581,
+    "status": "resolved",
+    "resolvedAt": 1780810216,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1336,
+    "nodeId": 190180032,
+    "resource": "Food",
+    "severity": 33,
+    "timestamp": 1780810448,
+    "status": "active"
+  },
+  {
+    "alertId": 1337,
+    "nodeId": 190180033,
+    "resource": "Water",
+    "severity": 87,
+    "timestamp": 1780813558,
+    "status": "resolved",
+    "resolvedAt": 1780819292,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1338,
+    "nodeId": 190180030,
+    "resource": "Medical",
+    "severity": 90,
+    "timestamp": 1780816285,
+    "status": "resolved",
+    "resolvedAt": 1780820176,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1339,
+    "nodeId": 190180029,
+    "resource": "Rescue",
+    "severity": 98,
+    "timestamp": 1780819713,
+    "status": "resolved",
+    "resolvedAt": 1780821134,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1340,
+    "nodeId": 190180030,
+    "resource": "Clothing",
+    "severity": 57,
+    "timestamp": 1780819928,
+    "status": "resolved",
+    "resolvedAt": 1780821191,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1341,
+    "nodeId": 190180030,
+    "resource": "Rescue",
+    "severity": 94,
+    "timestamp": 1780824741,
+    "status": "resolved",
+    "resolvedAt": 1780827361,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1342,
+    "nodeId": 190180029,
+    "resource": "Food",
+    "severity": 52,
+    "timestamp": 1780824870,
+    "status": "resolved",
+    "resolvedAt": 1780825217,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1343,
+    "nodeId": 190180030,
+    "resource": "Medical",
+    "severity": 82,
+    "timestamp": 1780829367,
+    "status": "active"
+  },
+  {
+    "alertId": 1344,
+    "nodeId": 190180029,
+    "resource": "Transport",
+    "severity": 31,
+    "timestamp": 1780832768,
+    "status": "active"
+  },
+  {
+    "alertId": 1345,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 28,
+    "timestamp": 1780835736,
+    "status": "resolved",
+    "resolvedAt": 1780836177,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1346,
+    "nodeId": 190180030,
+    "resource": "Shelter",
+    "severity": 93,
+    "timestamp": 1780840496,
+    "status": "resolved",
+    "resolvedAt": 1780842264,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1347,
+    "nodeId": 190180033,
+    "resource": "Water",
+    "severity": 60,
+    "timestamp": 1780844029,
+    "status": "active"
+  },
+  {
+    "alertId": 1348,
+    "nodeId": 190180030,
+    "resource": "Rescue",
+    "severity": 81,
+    "timestamp": 1780845177,
+    "status": "resolved",
+    "resolvedAt": 1780851962,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1349,
+    "nodeId": 190180029,
+    "resource": "Food",
+    "severity": 87,
+    "timestamp": 1780846297,
+    "status": "resolved",
+    "resolvedAt": 1780851139,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1350,
+    "nodeId": 190180030,
+    "resource": "Rescue",
+    "severity": 48,
+    "timestamp": 1780847915,
+    "status": "resolved",
+    "resolvedAt": 1780850639,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1351,
+    "nodeId": 190180031,
+    "resource": "Rescue",
+    "severity": 42,
+    "timestamp": 1780853095,
+    "status": "active"
+  },
+  {
+    "alertId": 1352,
+    "nodeId": 190180032,
+    "resource": "Transport",
+    "severity": 68,
+    "timestamp": 1780853192,
+    "status": "resolved",
+    "resolvedAt": 1780856027,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1353,
+    "nodeId": 190180031,
+    "resource": "Food",
+    "severity": 64,
+    "timestamp": 1780855031,
+    "status": "resolved",
+    "resolvedAt": 1780862166,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1354,
+    "nodeId": 190180029,
+    "resource": "Shelter",
+    "severity": 89,
+    "timestamp": 1780859762,
+    "status": "active"
+  },
+  {
+    "alertId": 1355,
+    "nodeId": 190180030,
+    "resource": "Water",
+    "severity": 41,
+    "timestamp": 1780862847,
+    "status": "active"
+  },
+  {
+    "alertId": 1356,
+    "nodeId": 190180031,
+    "resource": "Food",
+    "severity": 80,
+    "timestamp": 1780865160,
+    "status": "active"
+  },
+  {
+    "alertId": 1357,
+    "nodeId": 190180031,
+    "resource": "Food",
+    "severity": 53,
+    "timestamp": 1780866941,
+    "status": "resolved",
+    "resolvedAt": 1780873452,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1358,
+    "nodeId": 190180033,
+    "resource": "Rescue",
+    "severity": 69,
+    "timestamp": 1780868914,
+    "status": "resolved",
+    "resolvedAt": 1780870256,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1359,
+    "nodeId": 190180029,
+    "resource": "Rescue",
+    "severity": 37,
+    "timestamp": 1780874252,
+    "status": "resolved",
+    "resolvedAt": 1780877883,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1360,
+    "nodeId": 190180032,
+    "resource": "Food",
+    "severity": 49,
+    "timestamp": 1780876483,
+    "status": "resolved",
+    "resolvedAt": 1780882117,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1361,
+    "nodeId": 190180029,
+    "resource": "Shelter",
+    "severity": 41,
+    "timestamp": 1780881581,
+    "status": "resolved",
+    "resolvedAt": 1780882774,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1362,
+    "nodeId": 190180032,
+    "resource": "Food",
+    "severity": 81,
+    "timestamp": 1780886371,
+    "status": "active"
+  },
+  {
+    "alertId": 1363,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 84,
+    "timestamp": 1780891530,
+    "status": "resolved",
+    "resolvedAt": 1780893006,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1364,
+    "nodeId": 190180032,
+    "resource": "Clothing",
+    "severity": 60,
+    "timestamp": 1780895028,
+    "status": "active"
+  },
+  {
+    "alertId": 1365,
+    "nodeId": 190180030,
+    "resource": "Medical",
+    "severity": 64,
+    "timestamp": 1780896793,
+    "status": "resolved",
+    "resolvedAt": 1780900767,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1366,
+    "nodeId": 190180030,
+    "resource": "Transport",
+    "severity": 69,
+    "timestamp": 1780899763,
+    "status": "resolved",
+    "resolvedAt": 1780906581,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1367,
+    "nodeId": 190180032,
+    "resource": "Food",
+    "severity": 38,
+    "timestamp": 1780903588,
+    "status": "active"
+  },
+  {
+    "alertId": 1368,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 61,
+    "timestamp": 1780904520,
+    "status": "resolved",
+    "resolvedAt": 1780908376,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1369,
+    "nodeId": 190180031,
+    "resource": "Medical",
+    "severity": 61,
+    "timestamp": 1780904587,
+    "status": "resolved",
+    "resolvedAt": 1780906596,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1370,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 39,
+    "timestamp": 1780907814,
+    "status": "resolved",
+    "resolvedAt": 1780908397,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1371,
+    "nodeId": 190180029,
+    "resource": "Clothing",
+    "severity": 59,
+    "timestamp": 1780911889,
+    "status": "active"
+  },
+  {
+    "alertId": 1372,
+    "nodeId": 190180032,
+    "resource": "Water",
+    "severity": 63,
+    "timestamp": 1780915821,
+    "status": "active"
+  },
+  {
+    "alertId": 1373,
+    "nodeId": 190180031,
+    "resource": "Water",
+    "severity": 89,
+    "timestamp": 1780917087,
+    "status": "resolved",
+    "resolvedAt": 1780922373,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1374,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 79,
+    "timestamp": 1780919675,
+    "status": "resolved",
+    "resolvedAt": 1780925299,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1375,
+    "nodeId": 190180033,
+    "resource": "Food",
+    "severity": 54,
+    "timestamp": 1780923342,
+    "status": "resolved",
+    "resolvedAt": 1780923907,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1376,
+    "nodeId": 190180029,
+    "resource": "Rescue",
+    "severity": 69,
+    "timestamp": 1780927413,
+    "status": "resolved",
+    "resolvedAt": 1780933401,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1377,
+    "nodeId": 190180033,
+    "resource": "Shelter",
+    "severity": 60,
+    "timestamp": 1780930190,
+    "status": "active"
+  },
+  {
+    "alertId": 1378,
+    "nodeId": 190180029,
+    "resource": "Shelter",
+    "severity": 97,
+    "timestamp": 1780930201,
+    "status": "resolved",
+    "resolvedAt": 1780934194,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1379,
+    "nodeId": 190180031,
+    "resource": "Food",
+    "severity": 51,
+    "timestamp": 1780930896,
+    "status": "resolved",
+    "resolvedAt": 1780932855,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1380,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 57,
+    "timestamp": 1780932543,
+    "status": "active"
+  },
+  {
+    "alertId": 1381,
+    "nodeId": 190180031,
+    "resource": "Shelter",
+    "severity": 26,
+    "timestamp": 1780934377,
+    "status": "resolved",
+    "resolvedAt": 1780938049,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1382,
+    "nodeId": 190180032,
+    "resource": "Shelter",
+    "severity": 94,
+    "timestamp": 1780934592,
+    "status": "resolved",
+    "resolvedAt": 1780936535,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1383,
+    "nodeId": 190180033,
+    "resource": "Water",
+    "severity": 63,
+    "timestamp": 1780935969,
+    "status": "resolved",
+    "resolvedAt": 1780939228,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1384,
+    "nodeId": 190180031,
+    "resource": "Water",
+    "severity": 37,
+    "timestamp": 1780938569,
+    "status": "resolved",
+    "resolvedAt": 1780938984,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1385,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 42,
+    "timestamp": 1780941353,
+    "status": "resolved",
+    "resolvedAt": 1780942030,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1386,
+    "nodeId": 190180031,
+    "resource": "Transport",
+    "severity": 58,
+    "timestamp": 1780945123,
+    "status": "resolved",
+    "resolvedAt": 1780951591,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1387,
+    "nodeId": 190180033,
+    "resource": "Food",
+    "severity": 70,
+    "timestamp": 1780947013,
+    "status": "resolved",
+    "resolvedAt": 1780948816,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1388,
+    "nodeId": 190180033,
+    "resource": "Food",
+    "severity": 93,
+    "timestamp": 1780949074,
+    "status": "active"
+  },
+  {
+    "alertId": 1389,
+    "nodeId": 190180030,
+    "resource": "Water",
+    "severity": 89,
+    "timestamp": 1780952002,
+    "status": "resolved",
+    "resolvedAt": 1780953689,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1390,
+    "nodeId": 190180030,
+    "resource": "Clothing",
+    "severity": 97,
+    "timestamp": 1780953034,
+    "status": "resolved",
+    "resolvedAt": 1780954388,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1391,
+    "nodeId": 190180031,
+    "resource": "Medical",
+    "severity": 92,
+    "timestamp": 1780955123,
+    "status": "active"
+  },
+  {
+    "alertId": 1392,
+    "nodeId": 190180029,
+    "resource": "Transport",
+    "severity": 35,
+    "timestamp": 1780958617,
+    "status": "resolved",
+    "resolvedAt": 1780964475,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1393,
+    "nodeId": 190180033,
+    "resource": "Clothing",
+    "severity": 92,
+    "timestamp": 1780962257,
+    "status": "resolved",
+    "resolvedAt": 1780964349,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1394,
+    "nodeId": 190180031,
+    "resource": "Shelter",
+    "severity": 31,
+    "timestamp": 1780965410,
+    "status": "active"
+  },
+  {
+    "alertId": 1395,
+    "nodeId": 190180030,
+    "resource": "Rescue",
+    "severity": 91,
+    "timestamp": 1780969076,
+    "status": "resolved",
+    "resolvedAt": 1780969875,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1396,
+    "nodeId": 190180031,
+    "resource": "Rescue",
+    "severity": 54,
+    "timestamp": 1780972889,
+    "status": "active"
+  },
+  {
+    "alertId": 1397,
+    "nodeId": 190180033,
+    "resource": "Shelter",
+    "severity": 66,
+    "timestamp": 1780976946,
+    "status": "active"
+  },
+  {
+    "alertId": 1398,
+    "nodeId": 190180032,
+    "resource": "Clothing",
+    "severity": 34,
+    "timestamp": 1780978736,
+    "status": "resolved",
+    "resolvedAt": 1780984017,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1399,
+    "nodeId": 190180033,
+    "resource": "Clothing",
+    "severity": 72,
+    "timestamp": 1780981192,
+    "status": "active"
+  },
+  {
+    "alertId": 1400,
+    "nodeId": 190180032,
+    "resource": "Transport",
+    "severity": 53,
+    "timestamp": 1780984730,
+    "status": "resolved",
+    "resolvedAt": 1780986725,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1401,
+    "nodeId": 190180032,
+    "resource": "Food",
+    "severity": 69,
+    "timestamp": 1780987608,
+    "status": "active"
+  },
+  {
+    "alertId": 1402,
+    "nodeId": 190180030,
+    "resource": "Medical",
+    "severity": 82,
+    "timestamp": 1780990706,
+    "status": "resolved",
+    "resolvedAt": 1780992397,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1403,
+    "nodeId": 190180029,
+    "resource": "Shelter",
+    "severity": 35,
+    "timestamp": 1780991222,
+    "status": "resolved",
+    "resolvedAt": 1780992723,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1404,
+    "nodeId": 190180031,
+    "resource": "Water",
+    "severity": 48,
+    "timestamp": 1780992783,
+    "status": "resolved",
+    "resolvedAt": 1780999810,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1405,
+    "nodeId": 190180033,
+    "resource": "Medical",
+    "severity": 52,
+    "timestamp": 1780997791,
+    "status": "resolved",
+    "resolvedAt": 1781002298,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1406,
+    "nodeId": 190180030,
+    "resource": "Shelter",
+    "severity": 50,
+    "timestamp": 1780999832,
+    "status": "resolved",
+    "resolvedAt": 1781000509,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1407,
+    "nodeId": 190180030,
+    "resource": "Transport",
+    "severity": 74,
+    "timestamp": 1781004626,
+    "status": "resolved",
+    "resolvedAt": 1781010832,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1408,
+    "nodeId": 190180030,
+    "resource": "Water",
+    "severity": 91,
+    "timestamp": 1781008397,
+    "status": "resolved",
+    "resolvedAt": 1781010026,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1409,
+    "nodeId": 190180029,
+    "resource": "Food",
+    "severity": 47,
+    "timestamp": 1781013905,
+    "status": "active"
+  },
+  {
+    "alertId": 1410,
+    "nodeId": 190180032,
+    "resource": "Clothing",
+    "severity": 46,
+    "timestamp": 1781016963,
+    "status": "resolved",
+    "resolvedAt": 1781018824,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1411,
+    "nodeId": 190180033,
+    "resource": "Shelter",
+    "severity": 56,
+    "timestamp": 1781022230,
+    "status": "resolved",
+    "resolvedAt": 1781026166,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1412,
+    "nodeId": 190180033,
+    "resource": "Shelter",
+    "severity": 27,
+    "timestamp": 1781026016,
+    "status": "resolved",
+    "resolvedAt": 1781030479,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1413,
+    "nodeId": 190180033,
+    "resource": "Water",
+    "severity": 81,
+    "timestamp": 1781029907,
+    "status": "active"
+  },
+  {
+    "alertId": 1414,
+    "nodeId": 190180030,
+    "resource": "Rescue",
+    "severity": 38,
+    "timestamp": 1781030205,
+    "status": "active"
+  },
+  {
+    "alertId": 1415,
+    "nodeId": 190180032,
+    "resource": "Rescue",
+    "severity": 60,
+    "timestamp": 1781035441,
+    "status": "active"
+  },
+  {
+    "alertId": 1416,
+    "nodeId": 190180032,
+    "resource": "Food",
+    "severity": 56,
+    "timestamp": 1781040601,
+    "status": "resolved",
+    "resolvedAt": 1781044112,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1417,
+    "nodeId": 190180032,
+    "resource": "Medical",
+    "severity": 98,
+    "timestamp": 1781040862,
+    "status": "active"
+  },
+  {
+    "alertId": 1418,
+    "nodeId": 190180033,
+    "resource": "Medical",
+    "severity": 78,
+    "timestamp": 1781041436,
+    "status": "resolved",
+    "resolvedAt": 1781042996,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1419,
+    "nodeId": 190180031,
+    "resource": "Medical",
+    "severity": 79,
+    "timestamp": 1781045790,
+    "status": "resolved",
+    "resolvedAt": 1781047877,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1420,
+    "nodeId": 190180033,
+    "resource": "Medical",
+    "severity": 37,
+    "timestamp": 1781047746,
+    "status": "resolved",
+    "resolvedAt": 1781048704,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1421,
+    "nodeId": 190180030,
+    "resource": "Water",
+    "severity": 47,
+    "timestamp": 1781048689,
+    "status": "resolved",
+    "resolvedAt": 1781049721,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1422,
+    "nodeId": 190180031,
+    "resource": "Water",
+    "severity": 36,
+    "timestamp": 1781050755,
+    "status": "resolved",
+    "resolvedAt": 1781053011,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1423,
+    "nodeId": 190180031,
+    "resource": "Water",
+    "severity": 59,
+    "timestamp": 1781051813,
+    "status": "resolved",
+    "resolvedAt": 1781052895,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1424,
+    "nodeId": 190180033,
+    "resource": "Shelter",
+    "severity": 46,
+    "timestamp": 1781057451,
+    "status": "resolved",
+    "resolvedAt": 1781060730,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1425,
+    "nodeId": 190180033,
+    "resource": "Rescue",
+    "severity": 49,
+    "timestamp": 1781062449,
+    "status": "resolved",
+    "resolvedAt": 1781067711,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1426,
+    "nodeId": 190180029,
+    "resource": "Rescue",
+    "severity": 70,
+    "timestamp": 1781067769,
+    "status": "active"
+  },
+  {
+    "alertId": 1427,
+    "nodeId": 190180030,
+    "resource": "Clothing",
+    "severity": 82,
+    "timestamp": 1781069842,
+    "status": "resolved",
+    "resolvedAt": 1781072321,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1428,
+    "nodeId": 190180031,
+    "resource": "Water",
+    "severity": 83,
+    "timestamp": 1781070649,
+    "status": "resolved",
+    "resolvedAt": 1781073206,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1429,
+    "nodeId": 190180030,
+    "resource": "Water",
+    "severity": 88,
+    "timestamp": 1781071450,
+    "status": "active"
+  },
+  {
+    "alertId": 1430,
+    "nodeId": 190180031,
+    "resource": "Shelter",
+    "severity": 89,
+    "timestamp": 1781071604,
+    "status": "resolved",
+    "resolvedAt": 1781076053,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1431,
+    "nodeId": 190180033,
+    "resource": "Food",
+    "severity": 67,
+    "timestamp": 1781072554,
+    "status": "resolved",
+    "resolvedAt": 1781073832,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1432,
+    "nodeId": 190180030,
+    "resource": "Transport",
+    "severity": 33,
+    "timestamp": 1781075770,
+    "status": "resolved",
+    "resolvedAt": 1781078234,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1433,
+    "nodeId": 190180030,
+    "resource": "Rescue",
+    "severity": 96,
+    "timestamp": 1781080355,
+    "status": "active"
+  },
+  {
+    "alertId": 1434,
+    "nodeId": 190180033,
+    "resource": "Rescue",
+    "severity": 84,
+    "timestamp": 1781083973,
+    "status": "resolved",
+    "resolvedAt": 1781084285,
+    "resolvedBy": 190180030
+  },
+  {
+    "alertId": 1435,
+    "nodeId": 190180031,
+    "resource": "Rescue",
+    "severity": 41,
+    "timestamp": 1781085978,
+    "status": "active"
+  },
+  {
+    "alertId": 1436,
+    "nodeId": 190180031,
+    "resource": "Rescue",
+    "severity": 42,
+    "timestamp": 1781087337,
+    "status": "resolved",
+    "resolvedAt": 1781093950,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1437,
+    "nodeId": 190180033,
+    "resource": "Medical",
+    "severity": 65,
+    "timestamp": 1781088191,
+    "status": "resolved",
+    "resolvedAt": 1781090852,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1438,
+    "nodeId": 190180031,
+    "resource": "Medical",
+    "severity": 53,
+    "timestamp": 1781089354,
+    "status": "resolved",
+    "resolvedAt": 1781094146,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1439,
+    "nodeId": 190180031,
+    "resource": "Food",
+    "severity": 32,
+    "timestamp": 1781090344,
+    "status": "active"
+  },
+  {
+    "alertId": 1440,
+    "nodeId": 190180032,
+    "resource": "Rescue",
+    "severity": 85,
+    "timestamp": 1781092485,
+    "status": "active"
+  },
+  {
+    "alertId": 1441,
+    "nodeId": 190180030,
+    "resource": "Medical",
+    "severity": 43,
+    "timestamp": 1781096178,
+    "status": "active"
+  },
+  {
+    "alertId": 1442,
+    "nodeId": 190180030,
+    "resource": "Rescue",
+    "severity": 77,
+    "timestamp": 1781096239,
+    "status": "active"
+  },
+  {
+    "alertId": 1443,
+    "nodeId": 190180032,
+    "resource": "Rescue",
+    "severity": 26,
+    "timestamp": 1781098380,
+    "status": "active"
+  },
+  {
+    "alertId": 1444,
+    "nodeId": 190180029,
+    "resource": "Food",
+    "severity": 75,
+    "timestamp": 1781100198,
+    "status": "resolved",
+    "resolvedAt": 1781106974,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1445,
+    "nodeId": 190180030,
+    "resource": "Water",
+    "severity": 78,
+    "timestamp": 1781105539,
+    "status": "resolved",
+    "resolvedAt": 1781111991,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1446,
+    "nodeId": 190180031,
+    "resource": "Clothing",
+    "severity": 61,
+    "timestamp": 1781107446,
+    "status": "resolved",
+    "resolvedAt": 1781111649,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1447,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 59,
+    "timestamp": 1781110506,
+    "status": "active"
+  },
+  {
+    "alertId": 1448,
+    "nodeId": 190180032,
+    "resource": "Transport",
+    "severity": 27,
+    "timestamp": 1781114256,
+    "status": "resolved",
+    "resolvedAt": 1781115923,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1449,
+    "nodeId": 190180033,
+    "resource": "Clothing",
+    "severity": 43,
+    "timestamp": 1781117279,
+    "status": "active"
+  },
+  {
+    "alertId": 1450,
+    "nodeId": 190180032,
+    "resource": "Clothing",
+    "severity": 72,
+    "timestamp": 1781122167,
+    "status": "resolved",
+    "resolvedAt": 1781129163,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1451,
+    "nodeId": 190180029,
+    "resource": "Water",
+    "severity": 51,
+    "timestamp": 1781123135,
+    "status": "resolved",
+    "resolvedAt": 1781125662,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1452,
+    "nodeId": 190180029,
+    "resource": "Food",
+    "severity": 56,
+    "timestamp": 1781124324,
+    "status": "resolved",
+    "resolvedAt": 1781128110,
+    "resolvedBy": 190180032
+  },
+  {
+    "alertId": 1453,
+    "nodeId": 190180032,
+    "resource": "Transport",
+    "severity": 32,
+    "timestamp": 1781125850,
+    "status": "resolved",
+    "resolvedAt": 1781130878,
+    "resolvedBy": 190180031
+  },
+  {
+    "alertId": 1454,
+    "nodeId": 190180032,
+    "resource": "Food",
+    "severity": 45,
+    "timestamp": 1781130046,
+    "status": "resolved",
+    "resolvedAt": 1781132397,
+    "resolvedBy": 190180033
+  },
+  {
+    "alertId": 1455,
+    "nodeId": 190180033,
+    "resource": "Transport",
+    "severity": 79,
+    "timestamp": 1781135246,
+    "status": "active"
+  },
+  {
+    "alertId": 1456,
+    "nodeId": 190180030,
+    "resource": "Transport",
+    "severity": 76,
+    "timestamp": 1781136531,
+    "status": "active"
+  },
+  {
+    "alertId": 1457,
+    "nodeId": 190180030,
+    "resource": "Food",
+    "severity": 51,
+    "timestamp": 1781141302,
+    "status": "resolved",
+    "resolvedAt": 1781142319,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 1458,
+    "nodeId": 190180029,
+    "resource": "Transport",
+    "severity": 32,
+    "timestamp": 1781145821,
+    "status": "active"
+  },
+  {
+    "alertId": 1459,
+    "nodeId": 190180033,
+    "resource": "Food",
+    "severity": 81,
+    "timestamp": 1781149513,
+    "status": "resolved",
+    "resolvedAt": 1781153115,
+    "resolvedBy": 190180031
+  }
+]
