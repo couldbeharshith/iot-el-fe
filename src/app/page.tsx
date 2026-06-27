@@ -155,7 +155,7 @@ export default function Dashboard() {
         )}
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
           <StatsCard
             title="Active Alerts"
             value={activeAlerts.length}
@@ -167,12 +167,6 @@ export default function Dashboard() {
             value={resolvedAlerts.length}
             icon={<CheckCircle size={24} />}
             trend="down"
-          />
-          <StatsCard
-            title="High Priority"
-            value={highSeverity.length}
-            icon={<Zap size={24} />}
-            trend={highSeverity.length > 0 ? 'up' : 'stable'}
           />
           <StatsCard
             title="Total Alerts"

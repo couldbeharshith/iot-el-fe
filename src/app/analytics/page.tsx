@@ -260,7 +260,7 @@ export default function AnalyticsPage() {
 
       <main className="max-w-[1920px] mx-auto px-6 py-8">
         {/* Summary Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
           <div className="card-base p-5 hover:scale-105 transition-transform">
             <div className="text-sm text-slate-400 mb-1 font-medium">Total Alerts</div>
             <div className="text-3xl font-bold font-['Manrope'] bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
@@ -270,10 +270,6 @@ export default function AnalyticsPage() {
           <div className="card-base p-5 hover:scale-105 transition-transform">
             <div className="text-sm text-slate-400 mb-1 font-medium">Resolved</div>
             <div className="text-3xl font-bold font-['Manrope'] text-emerald-400">{resolvedAlerts}</div>
-          </div>
-          <div className="card-base p-5 hover:scale-105 transition-transform">
-            <div className="text-sm text-slate-400 mb-1 font-medium">Avg Resolution</div>
-            <div className="text-3xl font-bold font-['Manrope'] text-yellow-400">{avgResolutionTime}m</div>
           </div>
           <div className="card-base p-5 hover:scale-105 transition-transform">
             <div className="text-sm text-slate-400 mb-1 font-medium">Top Resource</div>
