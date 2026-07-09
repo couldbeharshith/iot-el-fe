@@ -1,13 +1,15 @@
 'use client'
 
 import { Alert, getSeverityColor, getSeverityLevel, getSeverityBgColor } from '@/lib/mqtt'
+import { formatNodeId } from '@/lib/nodeNames'
 import { AlertCircle, Clock, MapPin } from 'lucide-react'
 
 interface AlertCardProps {
   alert: Alert
+  nodeNames?: Record<string, string>
 }
 
-export default function AlertCard({ alert }: AlertCardProps) {
+export default function AlertCard({ alert, nodeNames = {} }: AlertCardProps) {
   const formatTime = (timestamp: number) => {
     const date = new Date(timestamp * 1000)
     return date.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit' })
@@ -84,7 +86,7 @@ export default function AlertCard({ alert }: AlertCardProps) {
             <Clock size={16} className="text-slate-400" />
             <div>
               <div>{formatFullTime(alert.timestamp)}</div>
-              <div className="text-xs text-slate-500">From: <span className="font-mono text-slate-400">0x{alert.nodeId.toString(16).toUpperCase()}</span></div>
+              <div className="text-xs text-slate-500">From: <span className="font-mono text-slate-400">{formatNodeId(alert.nodeId, nodeNames)}</span></div>
             </div>
           </div>
         </div>
@@ -110,7 +112,7 @@ export default function AlertCard({ alert }: AlertCardProps) {
                 <Clock size={16} className="text-emerald-500" />
                 <div>
                   <div>{formatFullTime(resolvedTime)}</div>
-                  <div className="text-xs text-slate-500">By: <span className="font-mono text-slate-400">0x{resolvedByNode.toString(16).toUpperCase()}</span></div>
+                  <div className="text-xs text-slate-500">By: <span className="font-mono text-slate-400">{formatNodeId(resolvedByNode, nodeNames)}</span></div>
                 </div>
               </div>
             </div>

@@ -4,8 +4,10 @@ import { useEffect, useState } from 'react'
 import Header from '@/components/Header'
 import AlertCard from '@/components/AlertCard'
 import StatsCard from '@/components/StatsCard'
+import NodeNamesModal from '@/components/NodeNamesModal'
 import { connectMQTT, disconnectMQTT, Alert } from '@/lib/mqtt'
 import { alertService } from '@/lib/alertService'
+import { nodeNameService } from '@/lib/nodeNames'
 import { AlertTriangle, CheckCircle, Clock, Zap, Trash2 } from 'lucide-react'
 
 const MAX_ALERTS = 100
@@ -17,12 +19,20 @@ export default function Dashboard() {
   const [error, setError] = useState<string | null>(null)
   const [isMounted, setIsMounted] = useState(false)
   const [filter, setFilter] = useState<'all' | 'active' | 'resolved'>('all')
+  const [isNodeModalOpen, setIsNodeModalOpen] = useState(false)
+  const [nodeNames, setNodeNames] = useState<Record<string, string>>({})
 
   // Load alerts from server on mount
   useEffect(() => {
     setIsMounted(true)
     loadAlerts()
+    loadNodeNames()
   }, [])
+
+  const loadNodeNames = async () => {
+    const names = await nodeNameService.getNodeNames()
+    setNodeNames(names)
+  }
 
   const loadAlerts = async () => {
     try {
@@ -136,7 +146,14 @@ export default function Dashboard() {
 
   return (
     <div className="min-h-screen bg-black">
-      <Header isConnected={isConnected} />
+      <Header isConnected={isConnected} onOpenNodeNames={() => setIsNodeModalOpen(true)} />
+
+      <NodeNamesModal
+        isOpen={isNodeModalOpen}
+        onClose={() => setIsNodeModalOpen(false)}
+        nodeIds={Array.from(new Set(alerts.map(a => a.nodeId)))}
+        onUpdate={loadNodeNames}
+      />
 
       <main className="max-w-7xl mx-auto px-6 py-8">
         {/* Status Message */}
@@ -244,7 +261,7 @@ export default function Dashboard() {
           ) : (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               {filteredAlerts.map((alert) => (
-                <AlertCard key={alert.alertId} alert={alert} />
+                <AlertCard key={alert.alertId} alert={alert} nodeNames={nodeNames} />
               ))}
             </div>
           )}

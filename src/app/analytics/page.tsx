@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Alert } from '@/lib/mqtt'
 import { alertService } from '@/lib/alertService'
+import { nodeNameService, formatNodeId } from '@/lib/nodeNames'
 import { ArrowLeft, Download, Database } from 'lucide-react'
 import Papa from 'papaparse'
 import mockAlerts from '../../../data/mockAlerts.json'
@@ -36,10 +37,17 @@ export default function AnalyticsPage() {
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('all')
   const [isLoading, setIsLoading] = useState(true)
   const [useMockData, setUseMockData] = useState(false)
+  const [nodeNames, setNodeNames] = useState<Record<string, string>>({})
 
   useEffect(() => {
     loadAlerts()
+    loadNodeNames()
   }, [useMockData])
+
+  const loadNodeNames = async () => {
+    const names = await nodeNameService.getNodeNames()
+    setNodeNames(names)
+  }
 
   const loadAlerts = async () => {
     setIsLoading(true)
@@ -168,7 +176,7 @@ export default function AnalyticsPage() {
     })
     return Object.entries(counts)
       .map(([nodeId, count]) => ({ 
-        nodeId: '0x' + parseInt(nodeId).toString(16).toUpperCase(), 
+        nodeId: formatNodeId(parseInt(nodeId), nodeNames), 
         count 
       }))
       .sort((a, b) => b.count - a.count)
@@ -508,7 +516,7 @@ export default function AnalyticsPage() {
                             <div className="text-sm text-slate-300 truncate">
                               <span className="font-medium">{alert.resource}</span> alert from{' '}
                               <span className="font-mono text-xs text-slate-400">
-                                0x{alert.nodeId.toString(16).toUpperCase()}
+                                {formatNodeId(alert.nodeId, nodeNames)}
                               </span>
                             </div>
                             <div className="text-xs text-slate-400 mt-0.5">
@@ -551,7 +559,7 @@ export default function AnalyticsPage() {
                                   <span>
                                     {' '}by{' '}
                                     <span className="font-mono text-xs text-slate-400">
-                                      0x{alert.resolvedBy.toString(16).toUpperCase()}
+                                      {formatNodeId(alert.resolvedBy, nodeNames)}
                                     </span>
                                   </span>
                                 )}

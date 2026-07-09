@@ -1,13 +1,14 @@
 'use client'
 
 import { usePathname, useRouter } from 'next/navigation'
-import { BarChart3 } from 'lucide-react'
+import { BarChart3, Tag } from 'lucide-react'
 
 interface HeaderProps {
   isConnected: boolean
+  onOpenNodeNames?: () => void
 }
 
-export default function Header({ isConnected }: HeaderProps) {
+export default function Header({ isConnected, onOpenNodeNames }: HeaderProps) {
   const pathname = usePathname()
   const router = useRouter()
 
@@ -25,6 +26,16 @@ export default function Header({ isConnected }: HeaderProps) {
         </div>
 
         <div className="flex items-center gap-3">
+          {pathname === '/' && onOpenNodeNames && (
+            <button
+              onClick={onOpenNodeNames}
+              className="flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg transition-colors"
+            >
+              <Tag size={18} />
+              <span className="text-sm font-medium">Node Names</span>
+            </button>
+          )}
+
           {pathname === '/' && (
             <button
               onClick={() => router.push('/analytics')}
