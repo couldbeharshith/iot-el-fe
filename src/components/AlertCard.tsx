@@ -89,6 +89,12 @@ export default function AlertCard({ alert }: AlertCardProps) {
           </div>
         </div>
 
+        {/* Quantity */}
+        <div>
+          <div className="text-xs text-slate-500 font-semibold mb-1">QUANTITY NEEDED</div>
+          <div className="text-lg font-bold text-cyan-400">{alert.quantity}</div>
+        </div>
+
         {/* Alert ID */}
         <div>
           <div className="text-xs text-slate-500 font-semibold mb-1">ALERT ID</div>

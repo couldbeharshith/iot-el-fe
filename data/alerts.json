@@ -1,19 +1,43 @@
 [
   {
-    "alertId": 32822,
-    "nodeId": 2,
-    "resource": "Food",
-    "severity": 78,
-    "timestamp": 206,
+    "alertId": 1001,
+    "nodeId": 190180029,
+    "resource": "Water",
+    "severity": 74,
+    "quantity": 36,
+    "timestamp": 1781009175,
     "status": "resolved",
-    "resolvedAt": 213
+    "resolvedAt": 1781014229,
+    "resolvedBy": 190180030
   },
   {
-    "alertId": 84604,
-    "nodeId": 1,
+    "alertId": 1002,
+    "nodeId": 190180033,
     "resource": "Clothing",
-    "severity": 65,
-    "timestamp": 119,
+    "severity": 64,
+    "quantity": 71,
+    "timestamp": 1781009178,
+    "status": "resolved",
+    "resolvedAt": 1781013638,
+    "resolvedBy": 190180029
+  },
+  {
+    "alertId": 6151,
+    "nodeId": 190180029,
+    "resource": "Shelter",
+    "severity": 69,
+    "quantity": 400,
+    "timestamp": 1783614066,
+    "status": "resolved",
+    "resolvedAt": 1783595827
+  },
+  {
+    "alertId": 84660,
+    "nodeId": 3379225653,
+    "resource": "Power",
+    "severity": 56,
+    "quantity": 99,
+    "timestamp": 1783615668,
     "status": "active"
   }
 ]

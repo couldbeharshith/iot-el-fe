@@ -5,6 +5,7 @@ export interface Alert {
   nodeId: number
   resource: string
   severity: number
+  quantity: number
   timestamp: number
   status: 'active' | 'resolved'
   resolvedAt?: number
@@ -84,6 +85,7 @@ export const connectMQTT = (
                 nodeId: data.nodeId,
                 resource: data.resource || 'Unknown',
                 severity: data.severity || 0,
+                quantity: data.quantity || 0,
                 timestamp: data.timestamp || Math.floor(Date.now() / 1000),
                 status: (data.status === 'resolved' ? 'resolved' : 'active') as 'active' | 'resolved'
               }

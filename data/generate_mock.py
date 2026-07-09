@@ -24,6 +24,7 @@ for i in range(NUM_ALERTS):
     node_id = random.choice(NODE_IDS)
     resource = random.choice(RESOURCES)
     severity = random.randint(25, 98)
+    quantity = random.randint(5, 100)
     timestamp = int(current_time.timestamp())
     
     # 70% chance of being resolved
@@ -34,6 +35,7 @@ for i in range(NUM_ALERTS):
         "nodeId": node_id,
         "resource": resource,
         "severity": severity,
+        "quantity": quantity,
         "timestamp": timestamp,
         "status": status
     }

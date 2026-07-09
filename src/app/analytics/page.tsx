@@ -31,7 +31,7 @@ const COLORS = ['#ff3b5c', '#00d9ff', '#7c3aed', '#facc15', '#10b981', '#f97316'
 export default function AnalyticsPage() {
   const router = useRouter()
   const [alerts, setAlerts] = useState<Alert[]>([])
-  const [timeRange, setTimeRange] = useState<TimeRange>('24h')
+  const [timeRange, setTimeRange] = useState<TimeRange>('all')
   const [resourceFilter, setResourceFilter] = useState<string>('all')
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('all')
   const [isLoading, setIsLoading] = useState(true)
@@ -44,12 +44,15 @@ export default function AnalyticsPage() {
   const loadAlerts = async () => {
     setIsLoading(true)
     if (useMockData) {
+      console.log('Loading mock data:', mockAlerts.length)
       setAlerts(mockAlerts as Alert[])
+      setIsLoading(false)
     } else {
       const data = await alertService.getAlerts()
+      console.log('Loading real data:', data.length)
       setAlerts(data)
+      setIsLoading(false)
     }
-    setIsLoading(false)
   }
 
   // Filter alerts based on selections
@@ -507,6 +510,9 @@ export default function AnalyticsPage() {
                               <span className="font-mono text-xs text-slate-400">
                                 0x{alert.nodeId.toString(16).toUpperCase()}
                               </span>
+                            </div>
+                            <div className="text-xs text-slate-400 mt-0.5">
+                              Qty: {alert.quantity}
                             </div>
                             <div className="flex items-center gap-2 mt-1">
                               <span className={`text-xs px-2 py-0.5 rounded ${
