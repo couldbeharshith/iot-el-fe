@@ -1,7 +1,7 @@
 'use client'
 
 import { Alert, getSeverityColor, getSeverityLevel, getSeverityBgColor } from '@/lib/mqtt'
-import { formatNodeId } from '@/lib/nodeNames'
+import { formatNodeId, formatQuantity } from '@/lib/nodeNames'
 import { AlertCircle, Clock, MapPin } from 'lucide-react'
 
 interface AlertCardProps {
@@ -97,7 +97,7 @@ export default function AlertCard({ alert, nodeNames = {} }: AlertCardProps) {
         {/* Quantity */}
         <div>
           <div className="text-xs text-slate-500 font-semibold mb-1">QUANTITY NEEDED</div>
-          <div className="text-lg font-bold text-cyan-400">{alert.quantity}</div>
+          <div className="text-lg font-bold text-cyan-400">{formatQuantity(alert.resource, alert.quantity)}</div>
         </div>
 
         {/* Alert ID */}

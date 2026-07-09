@@ -31,3 +31,19 @@ export function formatNodeId(nodeId: number, nodeNames: Record<string, string>):
   const name = nodeNames[nodeId.toString()]
   return name ? `${name} (${hexId})` : hexId
 }
+
+export function formatQuantity(resource: string, quantity: number): string {
+  const units: Record<string, string> = {
+    'Food': `Food for ${quantity} people`,
+    'Water': `${quantity} litre${quantity !== 1 ? 's' : ''}`,
+    'Medical': `${quantity} medical kit${quantity !== 1 ? 's' : ''}`,
+    'Shelter': `${quantity} tent${quantity !== 1 ? 's' : ''}`,
+    'Clothing': `${quantity} unit${quantity !== 1 ? 's' : ''} of clothing`,
+    'Power': `${quantity} generator${quantity !== 1 ? 's' : ''}`,
+    'Transport': `Transport for ${quantity} people`,
+    'Communication': `${quantity}`,
+    'Rescue': `${quantity} rescue team${quantity !== 1 ? 's' : ''}`
+  }
+  
+  return units[resource] || `${quantity}`
+}

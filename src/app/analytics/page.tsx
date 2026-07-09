@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Alert } from '@/lib/mqtt'
 import { alertService } from '@/lib/alertService'
-import { nodeNameService, formatNodeId } from '@/lib/nodeNames'
+import { nodeNameService, formatNodeId, formatQuantity } from '@/lib/nodeNames'
 import { ArrowLeft, Download, Database } from 'lucide-react'
 import Papa from 'papaparse'
 import mockAlerts from '../../../data/mockAlerts.json'
@@ -520,7 +520,7 @@ export default function AnalyticsPage() {
                               </span>
                             </div>
                             <div className="text-xs text-slate-400 mt-0.5">
-                              Qty: {alert.quantity}
+                              Qty: {formatQuantity(alert.resource, alert.quantity)}
                             </div>
                             <div className="flex items-center gap-2 mt-1">
                               <span className={`text-xs px-2 py-0.5 rounded ${
