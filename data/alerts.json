@@ -66,6 +66,17 @@
     "severity": 26,
     "quantity": 3,
     "timestamp": 1783616541,
-    "status": "active"
+    "status": "resolved",
+    "resolvedAt": 1783598144
+  },
+  {
+    "alertId": 49174,
+    "nodeId": 190180029,
+    "resource": "Shelter",
+    "severity": 69,
+    "quantity": 444,
+    "timestamp": 1783616426,
+    "status": "resolved",
+    "resolvedAt": 1783598163
   }
 ]

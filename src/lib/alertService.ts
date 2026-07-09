@@ -32,12 +32,17 @@ export const alertService = {
   },
 
   // Update alert status (for resolve)
-  async resolveAlert(alertId: number): Promise<Alert> {
+  async resolveAlert(alertId: number, resolvedBy?: number, resolvedAt?: number): Promise<Alert> {
     try {
       const response = await fetch(API_URL, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ alertId, status: 'resolved' }),
+        body: JSON.stringify({ 
+          alertId, 
+          status: 'resolved',
+          resolvedBy,
+          resolvedAt 
+        }),
       })
       if (!response.ok) throw new Error('Failed to update alert')
       return await response.json()

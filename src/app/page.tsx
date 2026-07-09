@@ -45,14 +45,15 @@ export default function Dashboard() {
 
   const handleResolveAlert = async (alertId: number, resolvedBy?: number, resolvedAt?: number) => {
     try {
-      await alertService.resolveAlert(alertId)
+      const timestamp = resolvedAt || Math.floor(Date.now() / 1000)
+      await alertService.resolveAlert(alertId, resolvedBy, timestamp)
       setAlerts((prev) =>
         prev.map((alert) =>
           alert.alertId === alertId
             ? { 
                 ...alert, 
                 status: 'resolved' as const, 
-                resolvedAt: resolvedAt || Math.floor(Date.now() / 1000),
+                resolvedAt: timestamp,
                 resolvedBy: resolvedBy
               }
             : alert
