@@ -121,10 +121,11 @@ export default function AnalyticsPage() {
 
     filteredAlerts.forEach((alert) => {
       const bucket = Math.floor(alert.timestamp / bucketSize) * bucketSize
-      const key = new Date(bucket * 1000).toLocaleString('en-US', {
+      const key = new Date(bucket * 1000).toLocaleString('en-IN', {
         month: 'short',
         day: 'numeric',
         hour: timeRange === '1h' || timeRange === '6h' ? 'numeric' : undefined,
+        timeZone: 'Asia/Kolkata',
       })
 
       if (!buckets[key]) {
@@ -505,11 +506,12 @@ export default function AnalyticsPage() {
                             <div className="flex items-center gap-2 mb-1">
                               <span className="text-xs font-medium text-cyan-400">CREATED</span>
                               <span className="text-xs text-slate-500">
-                                {new Date(alert.timestamp * 1000).toLocaleString('en-US', {
+                                {new Date(alert.timestamp * 1000).toLocaleString('en-IN', {
                                   month: 'short',
                                   day: 'numeric',
                                   hour: '2-digit',
                                   minute: '2-digit',
+                                  timeZone: 'Asia/Kolkata',
                                 })}
                               </span>
                             </div>
@@ -545,11 +547,12 @@ export default function AnalyticsPage() {
                               <div className="flex items-center gap-2 mb-1">
                                 <span className="text-xs font-medium text-emerald-400">RESOLVED</span>
                                 <span className="text-xs text-slate-500">
-                                  {new Date(alert.resolvedAt * 1000).toLocaleString('en-US', {
+                                  {new Date(alert.resolvedAt * 1000).toLocaleString('en-IN', {
                                     month: 'short',
                                     day: 'numeric',
                                     hour: '2-digit',
                                     minute: '2-digit',
+                                    timeZone: 'Asia/Kolkata',
                                   })}
                                 </span>
                               </div>

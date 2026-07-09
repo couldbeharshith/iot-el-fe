@@ -17,7 +17,13 @@ export default function AlertCard({ alert, nodeNames = {} }: AlertCardProps) {
 
   const formatFullTime = (timestamp: number) => {
     const date = new Date(timestamp * 1000)
-    return date.toLocaleString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })
+    return date.toLocaleString('en-IN', { 
+      month: 'short', 
+      day: 'numeric', 
+      hour: '2-digit', 
+      minute: '2-digit',
+      timeZone: 'Asia/Kolkata'
+    })
   }
 
   const severity = getSeverityLevel(alert.severity)
