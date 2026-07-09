@@ -43,13 +43,18 @@ export default function Dashboard() {
     }
   }
 
-  const handleResolveAlert = async (alertId: number) => {
+  const handleResolveAlert = async (alertId: number, resolvedBy?: number, resolvedAt?: number) => {
     try {
       await alertService.resolveAlert(alertId)
       setAlerts((prev) =>
         prev.map((alert) =>
           alert.alertId === alertId
-            ? { ...alert, status: 'resolved' as const, resolvedAt: Math.floor(Date.now() / 1000) }
+            ? { 
+                ...alert, 
+                status: 'resolved' as const, 
+                resolvedAt: resolvedAt || Math.floor(Date.now() / 1000),
+                resolvedBy: resolvedBy
+              }
             : alert
         )
       )

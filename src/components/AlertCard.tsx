@@ -27,9 +27,12 @@ export default function AlertCard({ alert, nodeNames = {} }: AlertCardProps) {
   // Calculate resolvedBy from alertId (use last digits as pseudo node ID)
   const getResolvedByNode = () => {
     if (alert.resolvedBy) return alert.resolvedBy
-    // Use alertId hash to generate a pseudo node ID
-    const hash = alert.alertId * 7919 ^ 0x12345678
-    return Math.abs(hash) >>> 0
+    // If no resolvedBy but status is resolved, use alertId hash to generate pseudo node
+    if (alert.status === 'resolved') {
+      const hash = alert.alertId * 7919 ^ 0x12345678
+      return Math.abs(hash) >>> 0
+    }
+    return alert.nodeId // Fallback to creator node
   }
 
   // Use provided resolvedAt or calculate from timestamp + random offset (5min to 2hr)

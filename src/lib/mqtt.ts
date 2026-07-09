@@ -22,7 +22,7 @@ let isConnecting = false
 
 export const connectMQTT = (
   onMessage: (alert: Alert | null) => void, // null means update existing
-  onResolve: (alertId: number) => void,
+  onResolve: (alertId: number, resolvedBy?: number, resolvedAt?: number) => void,
   onConnect: () => void,
   onError: (error: Error) => void
 ): Promise<void> => {
@@ -73,8 +73,8 @@ export const connectMQTT = (
             
             // Handle resolve messages: {"alertId": X, "nodeId": Y, "timestamp": Z, "status": "resolved"}
             if (data.alertId && data.status === 'resolved') {
-              console.log('Received resolve message for alert:', data.alertId)
-              onResolve(data.alertId)
+              console.log('Received resolve message for alert:', data.alertId, 'by node:', data.nodeId)
+              onResolve(data.alertId, data.nodeId, data.timestamp)
               return
             }
             
