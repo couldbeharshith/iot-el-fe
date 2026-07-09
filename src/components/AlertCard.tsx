@@ -16,7 +16,9 @@ export default function AlertCard({ alert, nodeNames = {} }: AlertCardProps) {
   }
 
   const formatFullTime = (timestamp: number) => {
-    const date = new Date(timestamp * 1000)
+    // Subtract 5.5 hours (19800 seconds) to correct timezone offset
+    const correctedTimestamp = timestamp - 19800
+    const date = new Date(correctedTimestamp * 1000)
     return date.toLocaleString('en-IN', { 
       month: 'short', 
       day: 'numeric', 

@@ -120,7 +120,9 @@ export default function AnalyticsPage() {
     const bucketSize = timeRange === '1h' || timeRange === '6h' ? 3600 : 24 * 3600
 
     filteredAlerts.forEach((alert) => {
-      const bucket = Math.floor(alert.timestamp / bucketSize) * bucketSize
+      // Subtract 5.5 hours (19800 seconds) to correct timezone offset
+      const correctedTimestamp = alert.timestamp - 19800
+      const bucket = Math.floor(correctedTimestamp / bucketSize) * bucketSize
       const key = new Date(bucket * 1000).toLocaleString('en-IN', {
         month: 'short',
         day: 'numeric',
@@ -187,7 +189,9 @@ export default function AnalyticsPage() {
   const hourlyData = (() => {
     const hours = Array.from({ length: 24 }, (_, i) => ({ hour: i, count: 0 }))
     filteredAlerts.forEach((a) => {
-      const hour = new Date(a.timestamp * 1000).getHours()
+      // Subtract 5.5 hours (19800 seconds) to correct timezone offset
+      const correctedTimestamp = a.timestamp - 19800
+      const hour = new Date(correctedTimestamp * 1000).getHours()
       hours[hour].count++
     })
     return hours.map((h) => ({ hour: `${h.hour}:00`, count: h.count }))
@@ -505,7 +509,7 @@ export default function AnalyticsPage() {
                             <div className="flex items-center gap-2 mb-1">
                               <span className="text-xs font-medium text-cyan-400">CREATED</span>
                               <span className="text-xs text-slate-500">
-                                {new Date(alert.timestamp * 1000).toLocaleString('en-IN', {
+                                {new Date((alert.timestamp - 19800) * 1000).toLocaleString('en-IN', {
                                   month: 'short',
                                   day: 'numeric',
                                   hour: '2-digit',
@@ -545,7 +549,7 @@ export default function AnalyticsPage() {
                               <div className="flex items-center gap-2 mb-1">
                                 <span className="text-xs font-medium text-emerald-400">RESOLVED</span>
                                 <span className="text-xs text-slate-500">
-                                  {new Date(alert.resolvedAt * 1000).toLocaleString('en-IN', {
+                                  {new Date((alert.resolvedAt - 19800) * 1000).toLocaleString('en-IN', {
                                     month: 'short',
                                     day: 'numeric',
                                     hour: '2-digit',
