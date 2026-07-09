@@ -124,8 +124,7 @@ export default function AnalyticsPage() {
       const key = new Date(bucket * 1000).toLocaleString('en-IN', {
         month: 'short',
         day: 'numeric',
-        hour: timeRange === '1h' || timeRange === '6h' ? 'numeric' : undefined,
-        timeZone: 'Asia/Kolkata',
+        hour: timeRange === '1h' || timeRange === '6h' ? 'numeric' : undefined
       })
 
       if (!buckets[key]) {
@@ -510,8 +509,7 @@ export default function AnalyticsPage() {
                                   month: 'short',
                                   day: 'numeric',
                                   hour: '2-digit',
-                                  minute: '2-digit',
-                                  timeZone: 'Asia/Kolkata',
+                                  minute: '2-digit'
                                 })}
                               </span>
                             </div>
@@ -551,8 +549,7 @@ export default function AnalyticsPage() {
                                     month: 'short',
                                     day: 'numeric',
                                     hour: '2-digit',
-                                    minute: '2-digit',
-                                    timeZone: 'Asia/Kolkata',
+                                    minute: '2-digit'
                                   })}
                                 </span>
                               </div>
